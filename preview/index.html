@@ -12,13 +12,11 @@
   h1 { font-size:28px; letter-spacing:-.02em; margin:0 0 8px; }
   p.lead { color:var(--muted); margin:0 0 32px; }
   .grid { display:grid; gap:14px; }
-  a.preview {
-    display:block; padding:20px 24px; border-radius:10px; text-decoration:none; color:inherit;
-    box-shadow:0 0 0 1px var(--border); transition:box-shadow .15s;
-  }
+  a.preview { display:block; padding:20px 24px; border-radius:10px; text-decoration:none; color:inherit; box-shadow:0 0 0 1px var(--border); transition:box-shadow .15s; }
   a.preview:hover { box-shadow:0 0 0 1px rgba(0,0,0,.16), 0 6px 16px -8px rgba(0,0,0,.12); }
   a.preview h2 { margin:0 0 4px; font-size:18px; }
   a.preview p { margin:0; font-size:14px; color:var(--muted); }
+  a.preview.new h2::after { content:" new"; color:#b34700; font-size:11px; text-transform:uppercase; letter-spacing:.05em; }
   .tag { font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); }
 </style>
 </head>
@@ -26,12 +24,14 @@
 <div class="wrap">
   <p class="tag">carlok.github.io — design previews</p>
   <h1>Pick a look</h1>
-  <p class="lead">Four renders of the same homepage content, in four design systems. Open each and flip between them with the bar at the top.</p>
+  <p class="lead">Renders of the same homepage content in different design systems. Flip between them with the bar at the top of each page.</p>
   <div class="grid">
-    <a class="preview" href="/preview/vercel.html"><h2>Vercel</h2><p>Clean minimal, light, technical — shadow-as-border, Geist. (This is what's live now.)</p></a>
-    <a class="preview" href="/preview/linear.html"><h2>Linear</h2><p>Dark-mode, ultra-minimal, indigo-violet accent, translucent surfaces.</p></a>
-    <a class="preview" href="/preview/stripe.html"><h2>Stripe</h2><p>Light, weight-300 elegance, deep navy + purple, blue-tinted shadows.</p></a>
-    <a class="preview" href="/preview/notion.html"><h2>Notion</h2><p>Warm neutrals, whisper borders, serif-grade restraint, blue accent.</p></a>
+    <a class="preview new" href="/preview/editorial.html"><h2>Editorial</h2><p>Serif display + mono labels, numbered index, hairline rules — no cards, no shadows. A research-journal voice.</p></a>
+    <a class="preview new" href="/preview/terminal.html"><h2>Terminal</h2><p>Mono typography, prompt lines and a file-tree layout. Distinctive and on-brand for software/systems.</p></a>
+    <a class="preview" href="/preview/vercel.html"><h2>Vercel</h2><p>Clean minimal, light, technical — shadow-as-border, Geist.</p></a>
+    <a class="preview" href="/preview/linear.html"><h2>Linear</h2><p>Dark-mode, ultra-minimal, indigo-violet accent.</p></a>
+    <a class="preview" href="/preview/stripe.html"><h2>Stripe</h2><p>Light, weight-300 elegance, deep navy + purple.</p></a>
+    <a class="preview" href="/preview/notion.html"><h2>Notion</h2><p>Warm neutrals, whisper borders, blue accent.</p></a>
   </div>
 </div>
 </body>
