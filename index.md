@@ -4,52 +4,41 @@ section: home
 permalink: /
 ---
 
-<div class="hero">
-  <p class="eyebrow">Software · Science · Systems</p>
-  <h1>Carlo Perassi</h1>
-  <p class="tagline">
-    A GitHub-facing hub: a compact map of software systems, scientific computing
-    experiments, research notes, and working drafts.
-  </p>
-</div>
+<p class="prompt">$ <b>whoami</b></p>
+<h1 class="hero-title">Carlo Perassi</h1>
+<p class="tagline">
+  A GitHub-facing hub: a compact map of software systems, scientific computing
+  experiments, research notes, and working drafts.
+</p>
 
-<div class="grid cols-3">
-  <a class="card" href="/projects/">
-    <h3>Projects</h3>
-    <p>A curated atlas of public GitHub work.</p>
-  </a>
-  <a class="card" href="/writing/">
-    <h3>Writing</h3>
-    <p>Working drafts, article PDFs, and book material.</p>
-  </a>
-  <a class="card" href="/blog/">
-    <h3>Blog</h3>
-    <p>A public log of activity across my repositories.</p>
-  </a>
-</div>
+<p class="cmd">ls ./</p>
+<ul class="tree">
+  <li><a href="/projects/">projects/</a> — a curated atlas of public GitHub work</li>
+  <li><a href="/writing/">writing/</a> — working drafts, article PDFs, and book material</li>
+  <li><a href="/blog/">blog/</a> — a public log of activity across my repositories</li>
+</ul>
 
-## Featured
-
+<p class="cmd">cat featured.txt</p>
 <div class="feature">
-  <div class="card-meta"><span class="badge">Featured project</span></div>
+  <div class="label">Featured project</div>
   <h3>LeanFrontier</h3>
   <p>
     An open Lean 4 library of machine-generated, kernel-verified mathematics,
     built on Mathlib. Every contribution is accepted by its mechanically checked
     properties, not by a human explanation of its proof.
   </p>
-  <a class="btn" href="https://carlok.github.io/LeanFrontier/">Open LeanFrontier ↗</a>
+  <a href="https://carlok.github.io/LeanFrontier/">open carlok.github.io/LeanFrontier →</a>
 </div>
 
-## Current threads
+<p class="cmd">cat threads.txt</p>
+<ul class="tree">
+  <li>software systems that are small enough to understand and useful enough to run</li>
+  <li>machine learning, distributed computing, agents, and source-code review workflows</li>
+  <li>mathematical and computational sketches where code, diagrams, and text share the same page</li>
+  <li>public notes that can become articles, talks, tools, or book chapters</li>
+</ul>
 
-- Software systems that are small enough to understand and useful enough to run.
-- Machine learning, distributed computing, agents, and source-code review workflows.
-- Mathematical and computational sketches where code, diagrams, and text share the same page.
-- Public notes that can become articles, talks, tools, or book chapters.
-
-## Recent posts
-
+<p class="cmd">ls _posts/ | head -3</p>
 {% for post in site.posts limit:3 %}
 <div class="post-card">
   <div class="post-meta"><time>{{ post.date | date: "%b %d, %Y" }}</time></div>
@@ -57,16 +46,20 @@ permalink: /
   <p class="excerpt">{{ post.excerpt | strip_html }}</p>
 </div>
 {% endfor %}
+<p><a href="/blog/">cat _posts/ (all posts) →</a></p>
 
-<p><a href="/blog/">View all posts →</a></p>
-
-## Why this site exists
-
-The personal site answers "who is Carlo?". This site answers "what is Carlo
-building, testing, reading, or formalizing on GitHub?". It is intentionally a
-map, not a portfolio brochure: many entries are experiments, notebooks, drafts,
-or narrow tools.
-
-- [carlo.perassi.com](https://carlo.perassi.com/) — personal identity page
-- [carlo.perassi.com/cv](https://carlo.perassi.com/cv/) — short CV
-- [github.com/carlok](https://github.com/carlok) — GitHub profile
+<p class="cmd">cat README.md</p>
+<div class="feature">
+  <div class="label">Why this site exists</div>
+  <p>
+    The personal site answers "who is Carlo?". This site answers "what is Carlo
+    building, testing, reading, or formalizing on GitHub?". It is intentionally a
+    map, not a portfolio brochure: many entries are experiments, notebooks, drafts,
+    or narrow tools.
+  </p>
+  <ul class="tree">
+    <li><a href="https://carlo.perassi.com/">carlo.perassi.com</a> — personal identity page</li>
+    <li><a href="https://carlo.perassi.com/cv/">carlo.perassi.com/cv</a> — short CV</li>
+    <li><a href="https://github.com/carlok">github.com/carlok</a> — GitHub profile</li>
+  </ul>
+</div>

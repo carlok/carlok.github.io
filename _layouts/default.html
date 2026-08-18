@@ -7,19 +7,19 @@
   <meta name="description" content="{{ page.description | default: site.description }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a class="brand" href="{{ '/' | relative_url }}">Carlo&nbsp;Perassi</a>
+      <a class="brand" href="{{ '/' | relative_url }}">carlok</a>
       <nav class="nav-links">
-        <a href="{{ '/' | relative_url }}" class="{% if page.section == 'home' %}active{% endif %}">Home</a>
-        <a href="{{ '/projects/' | relative_url }}" class="{% if page.section == 'projects' %}active{% endif %}">Projects</a>
-        <a href="{{ '/writing/' | relative_url }}" class="{% if page.section == 'writing' %}active{% endif %}">Writing</a>
-        <a href="{{ '/blog/' | relative_url }}" class="{% if page.section == 'blog' %}active{% endif %}">Blog</a>
-        <a href="https://carlok.github.io/LeanFrontier/" class="external">LeanFrontier&nbsp;↗</a>
+        <a href="{{ '/' | relative_url }}" class="{% if page.section == 'home' %}active{% endif %}">home</a>
+        <a href="{{ '/projects/' | relative_url }}" class="{% if page.section == 'projects' %}active{% endif %}">projects</a>
+        <a href="{{ '/writing/' | relative_url }}" class="{% if page.section == 'writing' %}active{% endif %}">writing</a>
+        <a href="{{ '/blog/' | relative_url }}" class="{% if page.section == 'blog' %}active{% endif %}">blog</a>
+        <a href="https://carlok.github.io/LeanFrontier/" class="external">leanfrontier ↗</a>
       </nav>
     </div>
   </header>
@@ -30,12 +30,14 @@
 
   <footer class="site-footer">
     <div class="container footer">
-      <span>© {{ site.time | date: '%Y' }} Carlo Perassi</span>
-      <span class="footer-links">
+      <span>
         <a href="https://github.com/carlok">github.com/carlok</a>
+        ·
         <a href="https://carlo.perassi.com/">carlo.perassi.com</a>
+        ·
         <a href="https://carlok.github.io/LeanFrontier/">LeanFrontier</a>
       </span>
+      <span>exit code 0</span>
     </div>
   </footer>
 </body>
