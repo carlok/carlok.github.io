@@ -1,0 +1,292 @@
+/* =========================================================
+   Carlo Perassi — carlok.github.io
+   Clean minimal · light · technical (Vercel/Linear inspired)
+   ========================================================= */
+
+:root {
+  --bg: #ffffff;
+  --bg-subtle: #fafafa;
+  --text: #171717;
+  --text-2: #4d4d4d;
+  --text-3: #666666;
+  --muted: #808080;
+  --border: rgba(0, 0, 0, 0.08);
+  --border-strong: #ebebeb;
+  --accent: #0072f5;
+  --accent-bg: #ebf5ff;
+  --accent-text: #0068d6;
+  --focus: hsla(212, 100%, 48%, 1);
+  --radius-sm: 6px;
+  --radius: 8px;
+  --radius-lg: 12px;
+  --font-sans: 'Geist', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---------- Header / nav ---------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: saturate(180%) blur(10px);
+  box-shadow: 0 0 0 1px var(--border);
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+}
+.brand {
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  text-decoration: none;
+}
+.nav-links { display: flex; align-items: center; gap: 2px; }
+.nav-links a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-2);
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  transition: color .15s ease, background .15s ease;
+}
+.nav-links a:hover { color: var(--text); background: var(--bg-subtle); }
+.nav-links a.active { color: var(--text); background: var(--bg-subtle); }
+.nav-links a.external { color: var(--accent-text); }
+
+/* ---------- Content ---------- */
+.content { padding: 48px 0 104px; min-height: 60vh; }
+
+h1, h2, h3, h4 {
+  color: var(--text);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+h1 { font-size: 40px; font-weight: 600; letter-spacing: -0.03em; margin: 0 0 16px; }
+h2 { font-size: 24px; font-weight: 600; letter-spacing: -0.02em; margin: 48px 0 16px; }
+h3 { font-size: 18px; font-weight: 600; margin: 28px 0 10px; }
+p { margin: 0 0 16px; color: var(--text-2); }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 2px; }
+
+/* ---------- Eyebrow / labels ---------- */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin: 0 0 10px;
+}
+
+/* ---------- Hero ---------- */
+.hero { padding: 40px 0 12px; }
+.hero h1 {
+  font-size: 48px;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  margin: 0 0 18px;
+}
+.hero .tagline {
+  font-size: 20px;
+  line-height: 1.55;
+  color: var(--text-2);
+  max-width: 660px;
+  margin: 0 0 8px;
+}
+
+/* ---------- Badges ---------- */
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--accent-text);
+  background: var(--accent-bg);
+  padding: 2px 10px;
+  border-radius: 9999px;
+  white-space: nowrap;
+}
+.badge.neutral {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-3);
+  background: var(--bg-subtle);
+  box-shadow: 0 0 0 1px var(--border);
+}
+
+/* ---------- Cards ---------- */
+.card {
+  background: var(--bg);
+  border-radius: var(--radius);
+  box-shadow:
+    rgba(0, 0, 0, 0.08) 0 0 0 1px,
+    rgba(0, 0, 0, 0.04) 0 2px 2px,
+    #fafafa 0 0 0 1px;
+  padding: 20px 24px;
+  transition: box-shadow .15s ease;
+}
+a.card { display: block; color: inherit; }
+a.card:hover { text-decoration: none; box-shadow: rgba(0,0,0,0.10) 0 0 0 1px, rgba(0,0,0,0.06) 0 4px 12px -4px; }
+.card h3 { margin: 0 0 8px; font-size: 17px; }
+.card p { margin: 0; font-size: 15px; }
+.card .card-meta { display: flex; gap: 8px; align-items: center; margin-bottom: 10px; }
+
+.grid { display: grid; gap: 16px; }
+.grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+.grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+
+/* ---------- Feature (LeanFrontier spotlight) ---------- */
+.feature {
+  border-radius: var(--radius-lg);
+  box-shadow:
+    rgba(0, 0, 0, 0.08) 0 0 0 1px,
+    rgba(0, 0, 0, 0.04) 0 2px 2px,
+    rgba(0, 0, 0, 0.04) 0 8px 8px -8px,
+    #fafafa 0 0 0 1px;
+  padding: 28px;
+  margin: 24px 0;
+}
+.feature h3 { margin: 0 0 8px; font-size: 20px; }
+.feature p { margin: 0 0 14px; }
+.feature .btn {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background: var(--text);
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: background .15s ease;
+}
+.feature .btn:hover { background: #000; text-decoration: none; }
+
+/* ---------- Link lists (projects / writing) ---------- */
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 44px 0 4px;
+}
+.section-head h2 { margin: 0; }
+.section-head .count {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+}
+.link-list { list-style: none; margin: 0; padding: 0; }
+.link-list li {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.link-list li:last-child { border-bottom: none; }
+.link-list a { color: var(--text); font-weight: 500; }
+.link-list a:hover { color: var(--accent); text-decoration: none; }
+.link-list .desc { color: var(--text-3); font-size: 14px; line-height: 1.5; }
+
+/* Generic content lists (plain markdown lists rendered clean) */
+.content ul { list-style: none; margin: 0; padding: 0; }
+.content li { padding: 12px 0; border-bottom: 1px solid var(--border); }
+.content li:last-child { border-bottom: none; }
+.content li a { color: var(--text); font-weight: 500; }
+.content li a:hover { color: var(--accent); text-decoration: none; }
+
+/* ---------- Blog listing ---------- */
+.post-card {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border);
+}
+.post-card:first-of-type { padding-top: 0; }
+.post-card:last-child { border-bottom: none; }
+.post-card h2 { margin: 6px 0 8px; font-size: 22px; }
+.post-card h2 a { color: var(--text); }
+.post-card h2 a:hover { color: var(--accent); text-decoration: none; }
+.post-card .excerpt { color: var(--text-2); margin: 0; }
+.post-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.post-meta time {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* ---------- Single post ---------- */
+.post { max-width: 720px; }
+.post-header { padding: 16px 0 8px; }
+.post-header h1 { font-size: 40px; }
+.post-body { font-size: 17px; line-height: 1.7; }
+.post-body h2 { margin-top: 40px; }
+.post-body code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background: var(--bg-subtle);
+  padding: 2px 6px;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px var(--border);
+}
+.post-footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border); }
+
+/* ---------- Footer ---------- */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 32px 0;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.footer-links { display: flex; gap: 16px; }
+.footer-links a { color: var(--text-3); }
+.footer-links a:hover { color: var(--text); }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .grid.cols-2, .grid.cols-3 { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 36px; }
+  h1 { font-size: 32px; }
+  .post-header h1 { font-size: 32px; }
+  .content { padding: 32px 0 72px; }
+  .nav-links a { padding: 6px 7px; font-size: 13px; }
+}

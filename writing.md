@@ -1,14 +1,13 @@
 ---
 title: Writing
+section: writing
 permalink: /writing/
 ---
 
 # Writing and research notes
 
-[Home](/) | [Projects](/projects/) | [Personal site](https://carlo.perassi.com/) | [CV](https://carlo.perassi.com/cv/)
-
-This page collects public working drafts, article PDFs, and book material. The
-canonical index of generated PDFs is [Book PDFs](/book/pdfs/).
+Public working drafts, article PDFs, and book material. The canonical index of
+generated PDFs is [Book PDFs](/book/pdfs/).
 
 ## Book draft
 

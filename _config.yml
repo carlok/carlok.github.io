@@ -1,3 +1,25 @@
-theme: jekyll-theme-minimal
-title: Carlo Perassi - software, science, systems
-description: A GitHub-facing project atlas for software systems, scientific computing experiments, research notes, and working drafts.
+title: Carlo Perassi — software, science, systems
+description: >-
+  A GitHub-facing project atlas, research-notes hub, and public activity log
+  for Carlo Perassi.
+url: "https://carlok.github.io"
+
+# No remote theme — custom layout + CSS live in _layouts/ and assets/.
+markdown: kramdown
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+permalink: /blog/:year/:month/:day/:title/
+
+exclude:
+  - README.md
+  - LICENSE
