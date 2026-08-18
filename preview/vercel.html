@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vercel preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#fff; --text:#171717; --t2:#4d4d4d; --t3:#666; --border:rgba(0,0,0,.08); --accent:#0072f5; --accent-bg:#ebf5ff; --accent-text:#0068d6; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:'Geist',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; color:var(--text); background:var(--bg); line-height:1.6; -webkit-font-smoothing:antialiased; }
+  .bar { display:flex; gap:8px; padding:10px 24px; border-bottom:1px solid var(--border); font-size:13px; }
+  .bar a { color:var(--t3); text-decoration:none; }
+  .bar a.on { color:var(--text); font-weight:600; }
+  .wrap { max-width:1000px; margin:0 auto; padding:0 24px; }
+  nav { display:flex; justify-content:space-between; align-items:center; height:56px; box-shadow:0 0 0 1px var(--border); }
+  nav .brand { font-weight:600; font-size:15px; }
+  nav .links { display:flex; gap:2px; }
+  nav .links a { font-size:14px; font-weight:500; color:var(--t2); text-decoration:none; padding:6px 10px; border-radius:6px; }
+  nav .links a:hover { background:#fafafa; color:var(--text); }
+  .eyebrow { font-size:12px; text-transform:uppercase; letter-spacing:.08em; color:var(--t3); margin:48px 0 10px; }
+  h1 { font-size:48px; font-weight:600; letter-spacing:-.04em; line-height:1.05; margin:0 0 18px; }
+  .tagline { font-size:20px; color:var(--t2); max-width:640px; margin:0 0 8px; }
+  .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin:24px 0; }
+  .card { border-radius:8px; box-shadow:rgba(0,0,0,.08) 0 0 0 1px, rgba(0,0,0,.04) 0 2px 2px, #fafafa 0 0 0 1px; padding:20px 24px; }
+  .card h3 { margin:0 0 8px; font-size:17px; }
+  .card p { margin:0; font-size:15px; color:var(--t2); }
+  .feature { border-radius:12px; box-shadow:rgba(0,0,0,.08) 0 0 0 1px, rgba(0,0,0,.04) 0 2px 2px, rgba(0,0,0,.04) 0 8px 8px -8px, #fafafa 0 0 0 1px; padding:28px; margin:24px 0; }
+  .feature h3 { margin:8px 0; font-size:20px; }
+  .feature p { margin:0 0 14px; color:var(--t2); }
+  .btn { display:inline-block; font-size:14px; font-weight:500; color:#fff; background:var(--text); padding:8px 16px; border-radius:6px; text-decoration:none; }
+  .badge { display:inline-block; font-size:12px; font-weight:500; color:var(--accent-text); background:var(--accent-bg); padding:2px 10px; border-radius:9999px; }
+  h2 { font-size:24px; letter-spacing:-.02em; margin:48px 0 16px; }
+  ul { list-style:none; margin:0; padding:0; }
+  li { padding:12px 0; border-bottom:1px solid var(--border); color:var(--t2); }
+  li:last-child { border-bottom:none; }
+  a { color:var(--accent); }
+  @media (max-width:768px){ .grid{grid-template-columns:1fr;} h1{font-size:36px;} }
+</style>
+</head>
+<body>
+<div class="bar">Preview: <a class="on" href="/preview/vercel.html">Vercel</a> · <a href="/preview/linear.html">Linear</a> · <a href="/preview/stripe.html">Stripe</a> · <a href="/preview/notion.html">Notion</a></div>
+<nav><div class="wrap" style="display:flex;justify-content:space-between;width:100%;"><span class="brand">Carlo Perassi</span><div class="links"><a href="#">Home</a><a href="#">Projects</a><a href="#">Writing</a><a href="#">Blog</a><a href="#">LeanFrontier ↗</a></div></div></nav>
+<div class="wrap">
+  <p class="eyebrow">Software · Science · Systems</p>
+  <h1>Carlo Perassi</h1>
+  <p class="tagline">A GitHub-facing hub: a compact map of software systems, scientific computing experiments, research notes, and working drafts.</p>
+  <div class="grid">
+    <div class="card"><h3>Projects</h3><p>A curated atlas of public GitHub work.</p></div>
+    <div class="card"><h3>Writing</h3><p>Working drafts, article PDFs, and book material.</p></div>
+    <div class="card"><h3>Blog</h3><p>A public log of activity across my repositories.</p></div>
+  </div>
+  <div class="feature"><span class="badge">Featured project</span><h3>LeanFrontier</h3><p>An open Lean 4 library of machine-generated, kernel-verified mathematics, built on Mathlib.</p><a class="btn" href="#">Open LeanFrontier ↗</a></div>
+  <h2>Current threads</h2>
+  <ul>
+    <li>Software systems small enough to understand and useful enough to run.</li>
+    <li>Machine learning, distributed computing, agents, and source-code review workflows.</li>
+    <li>Mathematical and computational sketches where code, diagrams, and text share a page.</li>
+  </ul>
+</div>
+</body>
+</html>

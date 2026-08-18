@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design previews — carlok.github.io</title>
+<style>
+  :root { --text:#171717; --muted:#666; --border:rgba(0,0,0,.08); }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; color:var(--text); background:#fff; line-height:1.6; }
+  .wrap { max-width:760px; margin:0 auto; padding:48px 24px; }
+  h1 { font-size:28px; letter-spacing:-.02em; margin:0 0 8px; }
+  p.lead { color:var(--muted); margin:0 0 32px; }
+  .grid { display:grid; gap:14px; }
+  a.preview {
+    display:block; padding:20px 24px; border-radius:10px; text-decoration:none; color:inherit;
+    box-shadow:0 0 0 1px var(--border); transition:box-shadow .15s;
+  }
+  a.preview:hover { box-shadow:0 0 0 1px rgba(0,0,0,.16), 0 6px 16px -8px rgba(0,0,0,.12); }
+  a.preview h2 { margin:0 0 4px; font-size:18px; }
+  a.preview p { margin:0; font-size:14px; color:var(--muted); }
+  .tag { font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="tag">carlok.github.io — design previews</p>
+  <h1>Pick a look</h1>
+  <p class="lead">Four renders of the same homepage content, in four design systems. Open each and flip between them with the bar at the top.</p>
+  <div class="grid">
+    <a class="preview" href="/preview/vercel.html"><h2>Vercel</h2><p>Clean minimal, light, technical — shadow-as-border, Geist. (This is what's live now.)</p></a>
+    <a class="preview" href="/preview/linear.html"><h2>Linear</h2><p>Dark-mode, ultra-minimal, indigo-violet accent, translucent surfaces.</p></a>
+    <a class="preview" href="/preview/stripe.html"><h2>Stripe</h2><p>Light, weight-300 elegance, deep navy + purple, blue-tinted shadows.</p></a>
+    <a class="preview" href="/preview/notion.html"><h2>Notion</h2><p>Warm neutrals, whisper borders, serif-grade restraint, blue accent.</p></a>
+  </div>
+</div>
+</body>
+</html>
