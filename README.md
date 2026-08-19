@@ -7,7 +7,7 @@ Carlo Perassi.
 ## Structure
 
 - `_layouts/` — custom Jekyll layouts (`default`, `post`)
-- `assets/css/main.css` — the design system (light, technical, Vercel/Linear inspired)
+- `assets/css/main.css` — the design system (terminal/mono aesthetic: `$` prompts, file-tree lists)
 - `index.md`, `projects.md`, `writing.md`, `blog.md` — the four pages
 - `_posts/` — blog entries (one markdown file per entry)
 
@@ -18,4 +18,5 @@ Carlo Perassi.
   deployed independently to [carlok.github.io/LeanFrontier/](https://carlok.github.io/LeanFrontier/).
   This repo only links to it.
 - **The blog is updated by a daily cron** that checks public GitHub activity,
-  writes a new `_posts/` entry when something important changes, and pushes.
+  writes a new `_posts/` entry when something important changes, keeps the
+  projects page (`projects.md`) in sync with new public repos, and pushes.
