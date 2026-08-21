@@ -18,6 +18,7 @@ complete archive.
 
 ## Visual and interactive systems
 
+- [cross-tetris](https://github.com/carlok/cross-tetris) — shared-queue 4-well cross variant of Tetris: Rust/WASM engine with a rule-based AI, played in the browser.
 - [spriter](https://github.com/carlok/spriter) — browser-only tool that turns a raster image into a pixel-art sprite. No upload, no build, no dependencies.
 - [deck-lovers](https://github.com/carlok/deck-lovers) — Markdown-to-HTML deck with live audience likes and projector sync.
 - [collective-canvas-3d](https://github.com/carlok/collective-canvas-3d) — collaborative 3D painting app where phones act as brushes.
@@ -27,6 +28,8 @@ complete archive.
 
 ## Math, computation, and formal experiments
 
+- [diaz-modulus-lean](https://github.com/carlok/diaz-modulus-lean) — Lean 4 formalization of a negative result on Diaz's modulus conjecture: a candidate's conjugate is a rational function of it, so no algebraic-hull matrix statement can separate it from an ordinary complex number.
+- [lean-corpus-density](https://github.com/carlok/lean-corpus-density) — dependency density in Lean 4 corpora, human and machine-generated, with evidence that machine mathematics accumulates. Reproducible from file headers.
 - [best-of-lean4](https://github.com/carlok/best-of-lean4) — curated list of awesome Lean 4 projects.
 - [inversive-geometry-lean](https://github.com/carlok/inversive-geometry-lean) — generalized circles (circlines) in Lean 4: circles and lines as one object, cut out by a Hermitian equation.
 - [euclean](https://github.com/carlok/euclean) — can a machine recover mathematical structure from an anonymized formal theory and a proof checker alone?
