@@ -36,7 +36,7 @@ permalink: /projects/
 - [spriter](https://github.com/carlok/spriter) — browser-only tool that turns a raster image into a pixel-art sprite. No upload, no build, no dependencies.
 - [deck-lovers](https://github.com/carlok/deck-lovers) — Markdown-to-HTML deck with live audience likes and projector sync.
 - [lifechess](https://github.com/carlok/lifechess) — chess-adjacent experiment mixing game structure and life-state modeling.
-- [collective-canvas-3d](https://github.com/carlok/collective-canvas-3d) — collaborative 3D painting app where phones act as brushes.
+- [collective-canvas-3d](https://github.com/kiwifarmit/collective-canvas-3d) — collaborative 3D painting app where phones act as brushes.
 - [neon-bumper-cars](https://github.com/carlok/neon-bumper-cars) — multiplayer WebSocket party game for live events.
 - [agility-trainer](https://github.com/carlok/agility-trainer) — mobile-first bodyweight agility trainer.
 
@@ -64,5 +64,3 @@ permalink: /projects/
 ## Writing, philosophy, and structured notes
 
 - [WIP articles and book PDFs](/book/pdfs/) — generated PDFs for the current book and standalone articles.
-- [StudySheetsOnScientificAtheism](https://github.com/carlok/StudySheetsOnScientificAtheism) — systematic critique notes on religious frameworks.
-- [minimum-viable-epistemology](https://github.com/carlok/minimum-viable-epistemology) — notes on the minimum needed to reason about reality.
