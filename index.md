@@ -56,7 +56,7 @@ permalink: /
 <p class="cmd">ls _posts/ | head -3</p>
 {% for post in site.posts limit:3 %}
 <div class="post-card">
-  <div class="post-meta"><time>{{ post.date | date: "%b %d, %Y" }}</time></div>
+  <div class="post-meta"><time>{{ post.date | date: "%Y-%m-%d" }}</time></div>
   <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
   <p class="excerpt">{{ post.excerpt | strip_html }}</p>
 </div>

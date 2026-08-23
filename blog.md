@@ -27,7 +27,7 @@ permalink: /blog/
 {% for post in site.posts %}
 <div class="post-card">
   <div class="post-meta">
-    <time>{{ post.date | date: "%b %d, %Y" }}</time>
+    <time>{{ post.date | date: "%Y-%m-%d" }}</time>
     {% for tag in post.tags %}<a class="badge" href="{{ '/blog/tag/' | append: tag | append: '/' | relative_url }}">{{ tag }}</a>{% endfor %}
   </div>
   <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>

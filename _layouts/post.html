@@ -10,7 +10,7 @@ layout: default
     <article class="post">
       <header class="post-header">
         <div class="post-meta">
-          <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%b %d, %Y' }}</time>
+          <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%Y-%m-%d' }}</time>
           {% for tag in page.tags %}<a class="badge" href="{{ '/blog/tag/' | append: tag | append: '/' | relative_url }}">{{ tag }}</a>{% endfor %}
         </div>
         <p class="cmd">cat _posts/{{ page.date | date: '%Y-%m-%d' }}-{{ page.title | slugify }}.md</p>
