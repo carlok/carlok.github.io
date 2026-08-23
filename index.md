@@ -4,12 +4,27 @@ section: home
 permalink: /
 ---
 
-<p class="prompt">$ <b>whoami</b></p>
-<h1 class="hero-title">Carlo Perassi</h1>
-<p class="tagline">
-  A GitHub-facing hub: a compact map of software systems, scientific computing
-  experiments, research notes, and working drafts.
-</p>
+<div class="window">
+  <div class="titlebar">
+    <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
+    <span class="filename">carlok — zsh — 88×30</span>
+  </div>
+  <div class="pane">
+    <p class="prompt">$ <b>whoami</b></p>
+    <h1 class="hero-title">Carlo Perassi<span class="cursor"></span></h1>
+    <p class="tagline">
+      A GitHub-facing hub: a compact map of software systems, scientific computing
+      experiments, research notes, and working drafts.
+    </p>
+  </div>
+</div>
+
+<div class="tabbar">
+  <a class="tab active" href="/">home.sh</a>
+  <a class="tab" href="/projects/">projects.sh</a>
+  <a class="tab" href="/writing/">writing.sh</a>
+  <a class="tab" href="/blog/">blog.sh</a>
+</div>
 
 <p class="cmd">ls ./</p>
 <ul class="tree">

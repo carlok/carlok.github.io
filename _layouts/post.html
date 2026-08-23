@@ -1,19 +1,27 @@
 ---
 layout: default
 ---
-<article class="post">
-  <header class="post-header">
-    <div class="post-meta">
-      <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%b %d, %Y' }}</time>
-      {% for tag in page.tags %}<span class="badge">{{ tag }}</span>{% endfor %}
-    </div>
-    <p class="cmd">cat _posts/{{ page.date | date: '%Y-%m-%d' }}-{{ page.title | slugify }}.md</p>
-    <h1>{{ page.title }}</h1>
-  </header>
-  <div class="post-body">
-    {{ content }}
+<div class="window">
+  <div class="titlebar">
+    <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
+    <span class="filename">carlok — zsh — 88×30</span>
   </div>
-  <footer class="post-footer">
-    <a href="{{ '/blog/' | relative_url }}">all posts</a>
-  </footer>
-</article>
+  <div class="pane">
+    <article class="post">
+      <header class="post-header">
+        <div class="post-meta">
+          <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%b %d, %Y' }}</time>
+          {% for tag in page.tags %}<a class="badge" href="{{ '/blog/tag/' | append: tag | append: '/' | relative_url }}">{{ tag }}</a>{% endfor %}
+        </div>
+        <p class="cmd">cat _posts/{{ page.date | date: '%Y-%m-%d' }}-{{ page.title | slugify }}.md</p>
+        <h1>{{ page.title }}</h1>
+      </header>
+      <div class="post-body">
+        {{ content }}
+      </div>
+      <footer class="post-footer">
+        <a href="{{ '/blog/' | relative_url }}">all posts</a>
+      </footer>
+    </article>
+  </div>
+</div>

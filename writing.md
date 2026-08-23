@@ -4,10 +4,24 @@ section: writing
 permalink: /writing/
 ---
 
-# Writing and research notes
+<div class="window">
+  <div class="titlebar">
+    <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
+    <span class="filename">carlok — zsh — 88×30</span>
+  </div>
+  <div class="pane">
+    <p class="prompt">$ <b>cat writing/README.md</b></p>
+    <h1 class="hero-title">Writing and research notes</h1>
+    <p class="tagline">Public working drafts, article PDFs, and book material. The canonical index of generated PDFs is <a href="/book/pdfs/">Book PDFs</a>.</p>
+  </div>
+</div>
 
-Public working drafts, article PDFs, and book material. The canonical index of
-generated PDFs is [Book PDFs](/book/pdfs/).
+<div class="tabbar">
+  <a class="tab" href="/">home.sh</a>
+  <a class="tab" href="/projects/">projects.sh</a>
+  <a class="tab active" href="/writing/">writing.sh</a>
+  <a class="tab" href="/blog/">blog.sh</a>
+</div>
 
 ## Book draft
 

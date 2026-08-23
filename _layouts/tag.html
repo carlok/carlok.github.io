@@ -1,0 +1,33 @@
+---
+layout: default
+---
+{% assign tagged = site.posts | where_exp: "post", "post.tags contains page.tag" %}
+<div class="window">
+  <div class="titlebar">
+    <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
+    <span class="filename">carlok — zsh — 88×30</span>
+  </div>
+  <div class="pane">
+    <p class="prompt">$ <b>grep -l {{ page.tag }} _posts/*.md</b></p>
+    <h1 class="hero-title">#{{ page.tag }}</h1>
+    <p class="tagline">{{ tagged | size }} post{% unless tagged.size == 1 %}s{% endunless %} tagged {{ page.tag }}. Back to the <a href="{{ '/blog/' | relative_url }}">full blog</a>.</p>
+  </div>
+</div>
+
+<div class="tabbar">
+  <a class="tab" href="{{ '/' | relative_url }}">home.sh</a>
+  <a class="tab" href="{{ '/projects/' | relative_url }}">projects.sh</a>
+  <a class="tab" href="{{ '/writing/' | relative_url }}">writing.sh</a>
+  <a class="tab active" href="{{ '/blog/' | relative_url }}">blog.sh</a>
+</div>
+
+{% for post in tagged %}
+<div class="post-card">
+  <div class="post-meta">
+    <time>{{ post.date | date: "%b %d, %Y" }}</time>
+    {% for t in post.tags %}<a class="badge{% if t == page.tag %} current{% endif %}" href="{{ '/blog/tag/' | append: t | append: '/' | relative_url }}">{{ t }}</a>{% endfor %}
+  </div>
+  <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+  <p class="excerpt">{{ post.excerpt | strip_html }}</p>
+</div>
+{% endfor %}

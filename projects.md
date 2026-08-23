@@ -4,10 +4,24 @@ section: projects
 permalink: /projects/
 ---
 
-# Projects
+<div class="window">
+  <div class="titlebar">
+    <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
+    <span class="filename">carlok — zsh — 88×30</span>
+  </div>
+  <div class="pane">
+    <p class="prompt">$ <b>cat projects/README.md</b></p>
+    <h1 class="hero-title">Projects</h1>
+    <p class="tagline">A curated map of public GitHub work. It favors active technical threads over a complete archive.</p>
+  </div>
+</div>
 
-A curated map of public GitHub work. It favors active technical threads over a
-complete archive.
+<div class="tabbar">
+  <a class="tab" href="/">home.sh</a>
+  <a class="tab active" href="/projects/">projects.sh</a>
+  <a class="tab" href="/writing/">writing.sh</a>
+  <a class="tab" href="/blog/">blog.sh</a>
+</div>
 
 ## Agents, automation, and review workflows
 
