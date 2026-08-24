@@ -54,6 +54,7 @@ permalink: /projects/
 
 ## Visual and interactive systems
 
+- [solids-hunter](https://github.com/carlok/solids-hunter) — first-person boolean-rule hunt: Babylon.js game with gamepad support and a shadow-pass watchdog.
 - [cross-tetris](https://github.com/carlok/cross-tetris) — shared-queue 4-well cross variant of Tetris: Rust/WASM engine with a rule-based AI, played in the browser.
 - [spriter](https://github.com/carlok/spriter) — browser-only tool that turns a raster image into a pixel-art sprite. No upload, no build, no dependencies.
 - [deck-lovers](https://github.com/carlok/deck-lovers) — Markdown-to-HTML deck with live audience likes and projector sync.
