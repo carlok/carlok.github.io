@@ -58,7 +58,7 @@ permalink: /
 <div class="post-card">
   <div class="post-meta"><time>{{ post.date | date: "%Y-%m-%d" }}</time></div>
   <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-  <p class="excerpt">{{ post.excerpt | strip_html }}</p>
+  <div class="excerpt">{{ post.excerpt }}</div>
 </div>
 {% endfor %}
 <p><a href="/blog/">cat _posts/ (all posts) →</a></p>

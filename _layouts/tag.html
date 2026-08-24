@@ -28,6 +28,6 @@ layout: default
     {% for t in post.tags %}<a class="badge{% if t == page.tag %} current{% endif %}" href="{{ '/blog/tag/' | append: t | append: '/' | relative_url }}">{{ t }}</a>{% endfor %}
   </div>
   <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-  <p class="excerpt">{{ post.excerpt | strip_html }}</p>
+  <div class="excerpt">{{ post.excerpt }}</div>
 </div>
 {% endfor %}

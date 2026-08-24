@@ -31,6 +31,6 @@ permalink: /blog/
     {% for tag in post.tags %}<a class="badge" href="{{ '/blog/tag/' | append: tag | append: '/' | relative_url }}">{{ tag }}</a>{% endfor %}
   </div>
   <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-  <p class="excerpt">{{ post.excerpt | strip_html }}</p>
+  <div class="excerpt">{{ post.excerpt }}</div>
 </div>
 {% endfor %}
