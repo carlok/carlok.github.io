@@ -10,7 +10,7 @@ layout: default
     <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
     <span class="filename">carlo — zsh — 88×30</span>
   </div>
-  <div class="pane cv-hero">
+  <div class="pane hero-split">
     <img class="avatar" src="https://github.com/carlok.png?size=460" alt="Carlo Perassi">
     <div class="hero-body">
       <p class="prompt">$ <b>whoami</b></p>

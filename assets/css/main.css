@@ -299,7 +299,8 @@ a.badge:hover, a.badge:focus-visible { color: var(--accent); background: rgba(12
 .footer a:hover { text-decoration: underline; }
 
 /* ---------- CV page ---------- */
-.cv-hero { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; }
+.hero-split { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; }
+.hero-body { flex: 1 1 320px; min-width: 0; }
 .avatar {
   width: 220px;
   height: 220px;
@@ -340,7 +341,7 @@ a.badge:hover, a.badge:focus-visible { color: var(--accent); background: rgba(12
 /* ---------- Responsive ---------- */
 @media (max-width: 560px) {
   .nav { padding-top: 12px; padding-bottom: 12px; }
-  .cv-hero { flex-direction: column; text-align: center; }
+  .hero-split { flex-direction: column; text-align: center; }
   .avatar { width: 150px; height: 150px; }
   .social { justify-content: center; }
 }
