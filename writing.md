@@ -9,10 +9,13 @@ permalink: /writing/
     <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
     <span class="filename">carlok — zsh — 88×30</span>
   </div>
-  <div class="pane">
-    <p class="prompt">$ <b>cat writing/README.md</b></p>
-    <h1 class="hero-title">Writing and research notes</h1>
-    <p class="tagline">Public working drafts, article PDFs, and book material. The canonical index of generated PDFs is <a href="/book/pdfs/">Book PDFs</a>.</p>
+  <div class="pane hero-split">
+    <img class="avatar" src="https://github.com/carlok.png?size=460" alt="Carlo Perassi">
+    <div class="hero-body">
+      <p class="prompt">$ <b>cat writing/README.md</b></p>
+      <h1 class="hero-title">Writing and research notes</h1>
+      <p class="tagline">Public working drafts, article PDFs, and book material. The canonical index of generated PDFs is <a href="/book/pdfs/">Book PDFs</a>.</p>
+    </div>
   </div>
 </div>
 

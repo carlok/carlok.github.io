@@ -9,10 +9,13 @@ permalink: /blog/
     <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
     <span class="filename">carlok — zsh — 88×30</span>
   </div>
-  <div class="pane">
-    <p class="prompt">$ <b>cat blog/README.md</b></p>
-    <h1 class="hero-title">Blog</h1>
-    <p class="tagline">A public log of what's changing across my repositories — releases, meaningful commits, and new projects. Only public activity appears here; routine chores, typo fixes, and automated merge noise are left out.</p>
+  <div class="pane hero-split">
+    <img class="avatar" src="https://github.com/carlok.png?size=460" alt="Carlo Perassi">
+    <div class="hero-body">
+      <p class="prompt">$ <b>cat blog/README.md</b></p>
+      <h1 class="hero-title">Blog</h1>
+      <p class="tagline">A public log of what's changing across my repositories — releases, meaningful commits, and new projects. Only public activity appears here; routine chores, typo fixes, and automated merge noise are left out.</p>
+    </div>
   </div>
 </div>
 
