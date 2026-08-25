@@ -56,7 +56,7 @@ permalink: /
     map, not a portfolio brochure: many entries are experiments, notebooks, drafts,
     or narrow tools.
   </p>
-  <ul class="tree">
-    <li><a href="https://carlo.perassi.com/">carlo.perassi.com</a> — personal identity page</li>
-  </ul>
+  <p>
+    That personal identity page is at <a href="https://carlo.perassi.com/">carlo.perassi.com</a>.
+  </p>
 </div>
