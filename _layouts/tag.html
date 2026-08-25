@@ -13,6 +13,7 @@ layout: default
       <p class="prompt">$ <b>grep -l {{ page.tag }} _posts/*.md</b></p>
       <h1 class="hero-title">#{{ page.tag }}</h1>
       <p class="tagline">{{ tagged | size }} post{% unless tagged.size == 1 %}s{% endunless %} tagged {{ page.tag }}. Back to the <a href="{{ '/blog/' | relative_url }}">full blog</a>.</p>
+      {% include social.html %}
     </div>
   </div>
 </div>

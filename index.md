@@ -15,14 +15,10 @@ permalink: /
       <p class="prompt">$ <b>whoami</b></p>
       <h1 class="hero-title">Carlo Perassi<span class="cursor"></span></h1>
       <p class="tagline">
-        A GitHub-facing hub: a compact map of software systems, scientific computing
-        experiments, research notes, and working drafts.
-      </p>
-      <p class="tagline">
-        The personal site answers "who is Carlo?". This site answers "what is Carlo
-        building, testing, reading, or formalizing on GitHub?". It is intentionally a
-        map, not a portfolio brochure: many entries are experiments, notebooks, drafts,
-        or narrow tools. That personal identity page is at <a href="https://carlo.perassi.com/">carlo.perassi.com</a>.
+        The <a href="https://carlo.perassi.com">personal site</a> answers "who is Carlo?". This
+        site answers "what is Carlo building, testing, reading, or formalizing on GitHub?". It is
+        intentionally a map, not a portfolio brochure: many entries are experiments, notebooks,
+        drafts, or narrow tools.
       </p>
       {% include social.html %}
     </div>
