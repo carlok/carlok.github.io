@@ -19,8 +19,8 @@ permalink: /writing/
 <div class="tabbar">
   <a class="tab" href="/">home.sh</a>
   <a class="tab" href="/projects/">projects.sh</a>
-  <a class="tab active" href="/writing/">writing.sh</a>
   <a class="tab" href="/blog/">blog.sh</a>
+  <a class="tab active" href="/writing/">writing.sh</a>
 </div>
 
 ## Book draft

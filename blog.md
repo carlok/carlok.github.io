@@ -19,8 +19,8 @@ permalink: /blog/
 <div class="tabbar">
   <a class="tab" href="/">home.sh</a>
   <a class="tab" href="/projects/">projects.sh</a>
-  <a class="tab" href="/writing/">writing.sh</a>
   <a class="tab active" href="/blog/">blog.sh</a>
+  <a class="tab" href="/writing/">writing.sh</a>
 </div>
 
 <p class="cmd">ls _posts/</p>

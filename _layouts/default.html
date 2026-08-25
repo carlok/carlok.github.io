@@ -13,7 +13,7 @@
   <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
 <body>
@@ -23,8 +23,9 @@
       <nav class="nav-links">
         <a href="{{ '/' | relative_url }}" class="{% if page.section == 'home' %}active{% endif %}">home</a>
         <a href="{{ '/projects/' | relative_url }}" class="{% if page.section == 'projects' %}active{% endif %}">projects</a>
-        <a href="{{ '/writing/' | relative_url }}" class="{% if page.section == 'writing' %}active{% endif %}">writing</a>
         <a href="{{ '/blog/' | relative_url }}" class="{% if page.section == 'blog' %}active{% endif %}">blog</a>
+        <a href="{{ '/writing/' | relative_url }}" class="{% if page.section == 'writing' %}active{% endif %}">writing</a>
+        <a href="{{ '/cv/' | relative_url }}" class="{% if page.section == 'cv' %}active{% endif %}">cv</a>
         <a href="https://carlok.github.io/LeanFrontier/" class="external">leanfrontier ↗</a>
       </nav>
     </div>

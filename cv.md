@@ -1,5 +1,6 @@
 ---
 title: CV
+section: cv
 permalink: /cv/
 layout: default
 ---
