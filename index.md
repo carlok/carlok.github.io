@@ -18,6 +18,12 @@ permalink: /
         A GitHub-facing hub: a compact map of software systems, scientific computing
         experiments, research notes, and working drafts.
       </p>
+      <p class="tagline">
+        The personal site answers "who is Carlo?". This site answers "what is Carlo
+        building, testing, reading, or formalizing on GitHub?". It is intentionally a
+        map, not a portfolio brochure: many entries are experiments, notebooks, drafts,
+        or narrow tools. That personal identity page is at <a href="https://carlo.perassi.com/">carlo.perassi.com</a>.
+      </p>
       {% include social.html %}
     </div>
   </div>
@@ -34,8 +40,9 @@ permalink: /
 <p class="cmd">ls ./</p>
 <ul class="tree">
   <li><a href="/projects/">projects/</a> — a curated atlas of public GitHub work</li>
-  <li><a href="/writing/">writing/</a> — working drafts, article PDFs, and book material</li>
   <li><a href="/blog/">blog/</a> — a public log of activity across my repositories</li>
+  <li><a href="/writing/">writing/</a> — working drafts, article PDFs, and book material</li>
+  <li><a href="/cv/">cv/</a> — a short curriculum vitae</li>
 </ul>
 
 <p class="cmd">ls _posts/ | head -3</p>
@@ -47,17 +54,3 @@ permalink: /
 </div>
 {% endfor %}
 <p><a href="/blog/">cat _posts/ (all posts) →</a></p>
-
-<p class="cmd">cat README.md</p>
-<div class="feature">
-  <div class="label">Why this site exists</div>
-  <p>
-    The personal site answers "who is Carlo?". This site answers "what is Carlo
-    building, testing, reading, or formalizing on GitHub?". It is intentionally a
-    map, not a portfolio brochure: many entries are experiments, notebooks, drafts,
-    or narrow tools.
-  </p>
-  <p>
-    That personal identity page is at <a href="https://carlo.perassi.com/">carlo.perassi.com</a>.
-  </p>
-</div>
