@@ -23,6 +23,15 @@ permalink: /projects/
   <a class="tab" href="/blog/">blog.sh</a>
 </div>
 
+## Infrastructure, security, and operational tools
+
+- [forgepulse](https://github.com/carlok/forgepulse) — self-hosted GitHub traffic-history analytics: Rust, Svelte, SQLite, and Podman.
+- [cold-path-server-podman](https://github.com/carlok/cold-path-server-podman) — run the Cold Path game server (jalhund/cold-path-server) in a Podman container.
+- [dash](https://github.com/carlok/dash) — serverless DMARC aggregate-report parser for Gmail: extracts, parses, enriches failing sources, emails a summary.
+- [Ubuntu-Hardening](https://github.com/carlok/Ubuntu-Hardening) — forked Ubuntu 24.04 CIS hardening script reference.
+- [sa-client-docker](https://github.com/carlok/sa-client-docker) — SQL Anywhere client container setup with a Python connectivity test.
+- [python-hosts-checker](https://github.com/carlok/python-hosts-checker) — AWS Lambda endpoint and certificate monitor with Telegram alerts.
+
 ## Math, computation, and formal experiments
 
 - [LeanFrontier](https://carlok.github.io/LeanFrontier/) — open Lean 4 library of machine-generated, kernel-verified mathematics on Mathlib.
@@ -35,15 +44,6 @@ permalink: /projects/
 - [modular-zeta3-acceleration](https://github.com/carlok/modular-zeta3-acceleration) — SageMath pipeline for Apéry-type zeta(3) acceleration.
 - [platosdf](https://github.com/carlok/platosdf) — genetic evolver for invariant signed-distance-field solids.
 - [aristowrap](https://github.com/carlok/aristowrap) — Docker-first CLI around Harmonic Aristotle, Lean 4, and Mathlib.
-
-## Infrastructure, security, and operational tools
-
-- [forgepulse](https://github.com/carlok/forgepulse) — self-hosted GitHub traffic-history analytics: Rust, Svelte, SQLite, and Podman.
-- [cold-path-server-podman](https://github.com/carlok/cold-path-server-podman) — run the Cold Path game server (jalhund/cold-path-server) in a Podman container.
-- [dash](https://github.com/carlok/dash) — serverless DMARC aggregate-report parser for Gmail: extracts, parses, enriches failing sources, emails a summary.
-- [Ubuntu-Hardening](https://github.com/carlok/Ubuntu-Hardening) — forked Ubuntu 24.04 CIS hardening script reference.
-- [sa-client-docker](https://github.com/carlok/sa-client-docker) — SQL Anywhere client container setup with a Python connectivity test.
-- [python-hosts-checker](https://github.com/carlok/python-hosts-checker) — AWS Lambda endpoint and certificate monitor with Telegram alerts.
 
 ## Visual and interactive systems
 
