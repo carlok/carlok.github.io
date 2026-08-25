@@ -13,7 +13,7 @@ permalink: /projects/
     <img class="avatar" src="https://github.com/carlok.png?size=460" alt="Carlo Perassi">
     <div class="hero-body">
       <p class="prompt">$ <b>cat projects/README.md</b></p>
-      <h1 class="hero-title">Projects</h1>
+      <h1 class="hero-title">Projects<span class="cursor"></span></h1>
       <p class="tagline">A curated map of public GitHub work. It favors active technical threads over a complete archive.</p>
       {% include social.html %}
     </div>

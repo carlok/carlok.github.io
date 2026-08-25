@@ -11,7 +11,7 @@ layout: default
     <img class="avatar" src="https://github.com/carlok.png?size=460" alt="Carlo Perassi">
     <div class="hero-body">
       <p class="prompt">$ <b>grep -l {{ page.tag }} _posts/*.md</b></p>
-      <h1 class="hero-title">#{{ page.tag }}</h1>
+      <h1 class="hero-title">#{{ page.tag }}<span class="cursor"></span></h1>
       <p class="tagline">{{ tagged | size }} post{% unless tagged.size == 1 %}s{% endunless %} tagged {{ page.tag }}. Back to the <a href="{{ '/blog/' | relative_url }}">full blog</a>.</p>
       {% include social.html %}
     </div>

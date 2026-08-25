@@ -14,7 +14,7 @@ layout: default
     <img class="avatar" src="https://github.com/carlok.png?size=460" alt="Carlo Perassi">
     <div class="hero-body">
       <p class="prompt">$ <b>whoami</b></p>
-      <h1 class="hero-title">Carlo Perassi</h1>
+      <h1 class="hero-title">Carlo Perassi<span class="cursor"></span></h1>
       <p class="tagline">Since 1996 I have been working as an independent consultant for government organizations and companies in Italy and abroad, mostly on projects related to the analysis and development of Free Software based distributed applications.</p>
       <p class="tagline">The following is just a "last five years" version of my Curriculum Vitae.</p>
       {% include social.html %}
