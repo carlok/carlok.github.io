@@ -24,6 +24,7 @@ permalink: /projects/
   <a class="tab active" href="/projects/">projects.sh</a>
   <a class="tab" href="/blog/">blog.sh</a>
   <a class="tab" href="/writing/">writing.sh</a>
+  <a class="tab" href="/cv/">cv.sh</a>
 </div>
 
 ## Infrastructure, security, and operational tools

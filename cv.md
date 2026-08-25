@@ -39,6 +39,14 @@ layout: default
   </div>
 </div>
 
+<div class="tabbar">
+  <a class="tab" href="/">home.sh</a>
+  <a class="tab" href="/projects/">projects.sh</a>
+  <a class="tab" href="/blog/">blog.sh</a>
+  <a class="tab" href="/writing/">writing.sh</a>
+  <a class="tab active" href="/cv/">cv.sh</a>
+</div>
+
 <div class="columns">
   <div class="col">
     <h2>Experience</h2>
