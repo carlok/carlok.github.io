@@ -92,6 +92,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 /* ---------- Terminal prompt lines ---------- */
 .prompt {
+  font-family: var(--font-mono);
   font-size: 13px;
   color: var(--t3);
   margin: 0 0 8px;
@@ -99,6 +100,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .prompt b { color: var(--accent); font-weight: 500; }
 
 .cmd {
+  font-family: var(--font-mono);
   font-size: 13px;
   color: var(--t3);
   margin: 36px 0 10px;
