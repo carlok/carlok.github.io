@@ -15,6 +15,7 @@ permalink: /writing/
       <p class="prompt">$ <b>cat writing/README.md</b></p>
       <h1 class="hero-title">Writing and research notes</h1>
       <p class="tagline">Public working drafts, article PDFs, and book material. The canonical index of generated PDFs is <a href="/book/pdfs/">Book PDFs</a>.</p>
+      {% include social.html %}
     </div>
   </div>
 </div>

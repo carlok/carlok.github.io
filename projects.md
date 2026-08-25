@@ -15,6 +15,7 @@ permalink: /projects/
       <p class="prompt">$ <b>cat projects/README.md</b></p>
       <h1 class="hero-title">Projects</h1>
       <p class="tagline">A curated map of public GitHub work. It favors active technical threads over a complete archive.</p>
+      {% include social.html %}
     </div>
   </div>
 </div>

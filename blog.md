@@ -15,6 +15,7 @@ permalink: /blog/
       <p class="prompt">$ <b>cat blog/README.md</b></p>
       <h1 class="hero-title">Blog</h1>
       <p class="tagline">A public log of what's changing across my repositories — releases, meaningful commits, and new projects. Only public activity appears here; routine chores, typo fixes, and automated merge noise are left out.</p>
+      {% include social.html %}
     </div>
   </div>
 </div>

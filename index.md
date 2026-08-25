@@ -18,6 +18,7 @@ permalink: /
         A GitHub-facing hub: a compact map of software systems, scientific computing
         experiments, research notes, and working drafts.
       </p>
+      {% include social.html %}
     </div>
   </div>
 </div>
