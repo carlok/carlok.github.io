@@ -183,7 +183,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   letter-spacing: -0.02em;
   line-height: 1.15;
   margin: 0 0 10px;
-  color: #fff;
+  color: var(--text);
 }
 .tagline {
   font-size: 14px;
@@ -207,7 +207,7 @@ ul.tree li, .content li {
   font-size: 14px;
   font-family: var(--font-sans);
 }
-ul.tree li::before, .content li::before { content: "├──"; position: absolute; left: -1px; top: 9px; color: var(--accent-dim); font-size: 12px; }
+ul.tree li::before, .content li::before { content: "├──"; position: absolute; left: -1px; top: 9px; color: var(--accent-dim); font-size: 12px; font-family: var(--font-mono); }
 ul.tree li:last-child::before, .content li:last-child::before { content: "└──"; }
 ul.tree li a, .content li a { color: var(--accent); text-decoration: none; }
 ul.tree li a:hover, .content li a:hover { text-decoration: underline; text-underline-offset: 3px; }
