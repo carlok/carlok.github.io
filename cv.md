@@ -58,7 +58,7 @@ layout: default
     <h2>Free Software, etc</h2>
     <h3>Free Software</h3>
     <ul>
-      <li><span class="yr">2010/2026</span> — GitHub (<a href="https://github.com/carlok">personal</a> and <a href="https://github.com/kiwifarmit">Kiwifarm</a>) and <a href="https://blog.kiwifarm.it/author/carlo/">blog</a> (2018/2025).</li>
+      <li><span class="yr">2010/2026</span> — GitHub (<a href="https://github.com/carlok">personal</a> and <a href="https://github.com/kiwifarmit">Kiwifarm</a>) and <a href="https://blog.kiwifarm.it/author/carlo/">blog</a> (2018/2026).</li>
     </ul>
     <h3>Extras</h3>
     <ul>
