@@ -28,6 +28,19 @@ permalink: /projects/
   <a class="tab" href="/cv/">cv.sh</a>
 </div>
 
+## Math, computation, and formal experiments
+
+- [diaz-modulus-lean](https://github.com/carlok/diaz-modulus-lean) — Lean 4 formalization of a negative result on Diaz's modulus conjecture: a candidate's conjugate is a rational function of it, so no algebraic-hull matrix statement can separate it from an ordinary complex number.
+- [erdos-straus-offset-lean](https://github.com/carlok/erdos-straus-offset-lean) — Lean 4-verified fixed-divisor offset construction for 4/n = 1/x + 1/y + 1/z (not a proof of Erdős–Straus).
+- [LeanFrontier](https://carlok.github.io/LeanFrontier/) — open Lean 4 library of machine-generated, kernel-verified mathematics on Mathlib.
+- [lean-corpus-density](https://github.com/carlok/lean-corpus-density) — dependency density in Lean 4 corpora, human and machine-generated, with evidence that machine mathematics accumulates. Reproducible from file headers.
+- [inversive-geometry-lean](https://github.com/carlok/inversive-geometry-lean) — generalized circles (circlines) in Lean 4: circles and lines as one object, cut out by a Hermitian equation.
+- [euclean](https://github.com/carlok/euclean) — can a machine recover mathematical structure from an anonymized formal theory and a proof checker alone?
+- [best-of-lean4](https://github.com/carlok/best-of-lean4) — curated list of awesome Lean 4 projects.
+- [modular-zeta3-acceleration](https://github.com/carlok/modular-zeta3-acceleration) — SageMath pipeline for Apéry-type zeta(3) acceleration.
+- [platosdf](https://github.com/carlok/platosdf) — genetic evolver for invariant signed-distance-field solids.
+- [aristowrap](https://github.com/carlok/aristowrap) — Docker-first CLI around Harmonic Aristotle, Lean 4, and Mathlib.
+
 ## Agents, automation, and review workflows
 
 - [caciarabot](https://github.com/carlok/caciarabot) — Italian-first, self-hosted reactive Telegram group bot.
@@ -43,19 +56,6 @@ permalink: /projects/
 - [Ubuntu-Hardening](https://github.com/carlok/Ubuntu-Hardening) — forked Ubuntu 24.04 CIS hardening script reference.
 - [sa-client-docker](https://github.com/carlok/sa-client-docker) — SQL Anywhere client container setup with a Python connectivity test.
 - [python-hosts-checker](https://github.com/carlok/python-hosts-checker) — AWS Lambda endpoint and certificate monitor with Telegram alerts.
-
-## Math, computation, and formal experiments
-
-- [LeanFrontier](https://carlok.github.io/LeanFrontier/) — open Lean 4 library of machine-generated, kernel-verified mathematics on Mathlib.
-- [diaz-modulus-lean](https://github.com/carlok/diaz-modulus-lean) — Lean 4 formalization of a negative result on Diaz's modulus conjecture: a candidate's conjugate is a rational function of it, so no algebraic-hull matrix statement can separate it from an ordinary complex number.
-- [lean-corpus-density](https://github.com/carlok/lean-corpus-density) — dependency density in Lean 4 corpora, human and machine-generated, with evidence that machine mathematics accumulates. Reproducible from file headers.
-- [inversive-geometry-lean](https://github.com/carlok/inversive-geometry-lean) — generalized circles (circlines) in Lean 4: circles and lines as one object, cut out by a Hermitian equation.
-- [euclean](https://github.com/carlok/euclean) — can a machine recover mathematical structure from an anonymized formal theory and a proof checker alone?
-- [best-of-lean4](https://github.com/carlok/best-of-lean4) — curated list of awesome Lean 4 projects.
-- [erdos-straus-offset-lean](https://github.com/carlok/erdos-straus-offset-lean) — Lean 4-verified fixed-divisor offset construction for 4/n = 1/x + 1/y + 1/z (not a proof of Erdős–Straus).
-- [modular-zeta3-acceleration](https://github.com/carlok/modular-zeta3-acceleration) — SageMath pipeline for Apéry-type zeta(3) acceleration.
-- [platosdf](https://github.com/carlok/platosdf) — genetic evolver for invariant signed-distance-field solids.
-- [aristowrap](https://github.com/carlok/aristowrap) — Docker-first CLI around Harmonic Aristotle, Lean 4, and Mathlib.
 
 ## Visual and interactive systems
 
