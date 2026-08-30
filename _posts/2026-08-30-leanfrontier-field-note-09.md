@@ -12,5 +12,6 @@ submission behind it is
 [PR #169](https://github.com/carlok/LeanFrontier/pull/169), adding
 `natDegree_eq_zero_of_comp_X_add_C_eq_self`, the natural-degree consequence of
 the existing polynomial translation-rigidity theorem, with the receiver report
-returning accepted. The corpus is at
+returning accepted (the note itself landed as
+[PR #171](https://github.com/carlok/LeanFrontier/pull/171)). The corpus is at
 [carlok.github.io/LeanFrontier](https://carlok.github.io/LeanFrontier/).
