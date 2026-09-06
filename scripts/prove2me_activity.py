@@ -33,15 +33,14 @@ def read_key():
     if key:
         return key.strip()
     path = os.environ.get("PROVE2ME_ENV")
-    if not path:
-        return None
-    try:
-        with open(path) as fh:
-            for line in fh:
-                if line.startswith("prove2me_key="):
-                    return line.split("=", 1)[1].strip().strip("'\"")
-    except OSError:
-        pass
+    if path:
+        try:
+            with open(path) as fh:
+                for line in fh:
+                    if line.startswith("prove2me_key="):
+                        return line.split("=", 1)[1].strip().strip("'\"")
+        except OSError:
+            pass
     sys.exit("no Prove2Me API key: set PROVE2ME_KEY or PROVE2ME_ENV")
 
 
