@@ -2,8 +2,8 @@
 """Poll Prove2Me for new activity and print a digest of what changed.
 
 Reads the API key from $PROVE2ME_KEY, or from the `prove2me_key=` line of the
-file named by $PROVE2ME_ENV (default: ~/Documents/varie/hacks/lean4/prove2me/.env).
-The key is never printed and never written to the state file.
+file named by $PROVE2ME_ENV. There is no hardcoded default location. The key is
+never printed and never written to the state file.
 
 State lives in _data/prove2me_state.json: the last-seen snapshot plus a watchlist
 of theorem ids whose status and submissions we follow.
@@ -26,14 +26,15 @@ SITE = "https://prove2.me"
 # /users/<username> does NOT work - the profile URL takes the uuid.
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATE_PATH = os.path.join(ROOT, "_data", "prove2me_state.json")
-DEFAULT_ENV = os.path.expanduser("~/Documents/varie/hacks/lean4/prove2me/.env")
 
 
 def read_key():
     key = os.environ.get("PROVE2ME_KEY")
     if key:
         return key.strip()
-    path = os.environ.get("PROVE2ME_ENV", DEFAULT_ENV)
+    path = os.environ.get("PROVE2ME_ENV")
+    if not path:
+        return None
     try:
         with open(path) as fh:
             for line in fh:
