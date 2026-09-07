@@ -21,9 +21,9 @@ Carlo Perassi.
   writes a new `_posts/` entry when something important changes, keeps the
   projects page (`projects.md`) in sync with new public repos, and pushes.
 
-- **Prove2Me activity is tracked separately.** `scripts/prove2me_activity.py` polls
-  [prove2.me](https://prove2.me) for new theorems, submissions and status changes on a
-  watchlist, diffs against `_data/prove2me_state.json`, and prints what changed
-  (`--write` updates the state). It reads the API key from `$PROVE2ME_KEY` or the
-  `prove2me_key=` line of `$PROVE2ME_ENV`; the key never reaches the state file or the repo.
-  Posts from it carry the `prove2me` tag.
+- **Prove2Me activity lives in its own repo.**
+  [prove2me-logs](https://github.com/carlok/prove2me-logs) carries one entry per
+  stable result, with theorem uuids, the Lean environment and what remains open.
+  Posts here are written from that repo by the daily task in
+  `scripts/PROVE2ME_BLOG_TASK.md`, which reads only public URLs — no API key, no
+  polling, no state kept here. Those posts carry the `prove2me` tag.
