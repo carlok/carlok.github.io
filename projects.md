@@ -30,8 +30,9 @@ permalink: /projects/
 
 ## Math, computation, and formal experiments
 
-- [unused-assumptions](https://github.com/carlok/unused-assumptions) — Mathlib theorems whose stated typeclass setting is stronger than their proof needs; machine-found one-binder weakenings, each re-verified by the compiler at a pinned Mathlib revision.
+- [diaz-modulus-lean](https://github.com/carlok/diaz-modulus-lean) — Lean 4 formalization of a negative result on Diaz's modulus conjecture: a candidate's conjugate is a rational function of it, so no algebraic-hull matrix statement can separate it from an ordinary complex number.
 - [prove2me-logs](https://github.com/carlok/prove2me-logs) — working log of Prove2Me formalization activity: per-mission entries with theorem uuids, Lean environments, and what remains open; a record of the work, not an archive of the proofs.
+- [unused-assumptions](https://github.com/carlok/unused-assumptions) — Mathlib theorems whose stated typeclass setting is stronger than their proof needs; machine-found one-binder weakenings, each re-verified by the compiler at a pinned Mathlib revision.
 - [magma-1518-obstruction-lean](https://github.com/carlok/magma-1518-obstruction-lean) — Lean 4 on ETP law 1518: one-generated (1518+3862)-magmas are trivial or the Z/3 shift, and constant-coefficient magma cohomology cannot refute 1518 ⇒ 47/614/817/3862.
 - [unstated-conclusions](https://github.com/carlok/unstated-conclusions) — the dual of unused-assumptions: Mathlib theorems whose proofs establish a stronger conclusion than they state, read off the last step of the proof term.
 - [parsimagma](https://github.com/carlok/parsimagma) — magma signature and coverage engine over the Equational Theories Project law set.
@@ -39,7 +40,6 @@ permalink: /projects/
 - [cdclkit](https://github.com/carlok/cdclkit) — readable, self-checking CDCL SAT solver, preprocessor, and encoding library: every answer comes with a certificate (models re-checked, UNSAT backed by a DRAT proof an independent checker replays).
 - [moebius-transcendental-lean](https://github.com/carlok/moebius-transcendental-lean) — Lean 4 formalization of the conjugation degree on the transcendental locus (companion to p19), archived with a Zenodo DOI.
 - [LeanFrontier](https://carlok.github.io/LeanFrontier/) — open Lean 4 library of machine-generated, kernel-verified mathematics on Mathlib.
-- [diaz-modulus-lean](https://github.com/carlok/diaz-modulus-lean) — Lean 4 formalization of a negative result on Diaz's modulus conjecture: a candidate's conjugate is a rational function of it, so no algebraic-hull matrix statement can separate it from an ordinary complex number.
 - [erdos-straus-offset-lean](https://github.com/carlok/erdos-straus-offset-lean) — Lean 4-verified fixed-divisor offset construction for 4/n = 1/x + 1/y + 1/z (not a proof of Erdős–Straus).
 - [lean-corpus-density](https://github.com/carlok/lean-corpus-density) — dependency density in Lean 4 corpora, human and machine-generated, with evidence that machine mathematics accumulates. Reproducible from file headers.
 - [inversive-geometry-lean](https://github.com/carlok/inversive-geometry-lean) — generalized circles (circlines) in Lean 4: circles and lines as one object, cut out by a Hermitian equation.
