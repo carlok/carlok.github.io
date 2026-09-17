@@ -28,11 +28,21 @@ permalink: /projects/
   <a class="tab" href="/cv/">cv.sh</a>
 </div>
 
+## Infrastructure, security, and operational tools
+
+- [Ubuntu-Hardening](https://github.com/carlok/Ubuntu-Hardening) — forked Ubuntu 24.04 CIS hardening script reference.
+- [forgepulse](https://github.com/carlok/forgepulse) — self-hosted GitHub traffic-history analytics: Rust, Svelte, SQLite, and Podman.
+- [pacenotch](https://github.com/carlok/pacenotch) — Claude usage limits in the terminal, a tray icon and a window: a vertical notch on each bar marks where an even pace would leave you, so the fill says ahead-of-pace or room-to-spare at a glance.
+- [cold-path-server-podman](https://github.com/carlok/cold-path-server-podman) — run the Cold Path game server (jalhund/cold-path-server) in a Podman container.
+- [dash](https://github.com/carlok/dash) — serverless DMARC aggregate-report parser for Gmail: extracts, parses, enriches failing sources, emails a summary.
+- [sa-client-docker](https://github.com/carlok/sa-client-docker) — SQL Anywhere client container setup with a Python connectivity test.
+- [python-hosts-checker](https://github.com/carlok/python-hosts-checker) — AWS Lambda endpoint and certificate monitor with Telegram alerts.
+
 ## Math, computation, and formal experiments
 
-- [sharp-symmetry-bounds-lean](https://github.com/carlok/sharp-symmetry-bounds-lean) — Lean 4 formalization of sharp symmetry bounds for real plane algebraic curves: for an irreducible, non-circular real plane curve of degree d, the Euclidean symmetry group is finite, its rotation part cyclic of order at most max(d, 2d−4) and the full group of order at most 2d, with both bounds attained in every degree.
-- [prove2me-logs](https://github.com/carlok/prove2me-logs) — working log of Prove2Me formalization activity: per-mission entries with theorem uuids, Lean environments, and what remains open; a record of the work, not an archive of the proofs.
 - [diaz-modulus-lean](https://github.com/carlok/diaz-modulus-lean) — Lean 4 formalization of a negative result on Diaz's modulus conjecture: a candidate's conjugate is a rational function of it, so no algebraic-hull matrix statement can separate it from an ordinary complex number.
+- [prove2me-logs](https://github.com/carlok/prove2me-logs) — working log of Prove2Me formalization activity: per-mission entries with theorem uuids, Lean environments, and what remains open; a record of the work, not an archive of the proofs.
+- [sharp-symmetry-bounds-lean](https://github.com/carlok/sharp-symmetry-bounds-lean) — Lean 4 formalization of sharp symmetry bounds for real plane algebraic curves: for an irreducible, non-circular real plane curve of degree d, the Euclidean symmetry group is finite, its rotation part cyclic of order at most max(d, 2d−4) and the full group of order at most 2d, with both bounds attained in every degree.
 - [quadratula](https://github.com/carlok/quadratula) — how much of Le Floch's implication semilattice of Schröder's 990 quasigroup laws small quasigroups already witness: exhaustive enumeration to order 6, exact results to order 9, a provably optimal 17-quasigroup cover, and a generated report with independent checks.
 - [magma-1518-obstruction-lean](https://github.com/carlok/magma-1518-obstruction-lean) — Lean 4 on ETP law 1518: one-generated (1518+3862)-magmas are trivial or the Z/3 shift, and constant-coefficient magma cohomology cannot refute 1518 ⇒ 47/614/817/3862.
 - [LeanFrontier](https://carlok.github.io/LeanFrontier/) — open Lean 4 library of machine-generated, kernel-verified mathematics on Mathlib.
@@ -50,16 +60,6 @@ permalink: /projects/
 - [modular-zeta3-acceleration](https://github.com/carlok/modular-zeta3-acceleration) — SageMath pipeline for Apéry-type zeta(3) acceleration.
 - [platosdf](https://github.com/carlok/platosdf) — genetic evolver for invariant signed-distance-field solids.
 - [aristowrap](https://github.com/carlok/aristowrap) — Docker-first CLI around Harmonic Aristotle, Lean 4, and Mathlib.
-
-## Infrastructure, security, and operational tools
-
-- [forgepulse](https://github.com/carlok/forgepulse) — self-hosted GitHub traffic-history analytics: Rust, Svelte, SQLite, and Podman.
-- [pacenotch](https://github.com/carlok/pacenotch) — Claude usage limits in the terminal, a tray icon and a window: a vertical notch on each bar marks where an even pace would leave you, so the fill says ahead-of-pace or room-to-spare at a glance.
-- [Ubuntu-Hardening](https://github.com/carlok/Ubuntu-Hardening) — forked Ubuntu 24.04 CIS hardening script reference.
-- [cold-path-server-podman](https://github.com/carlok/cold-path-server-podman) — run the Cold Path game server (jalhund/cold-path-server) in a Podman container.
-- [dash](https://github.com/carlok/dash) — serverless DMARC aggregate-report parser for Gmail: extracts, parses, enriches failing sources, emails a summary.
-- [sa-client-docker](https://github.com/carlok/sa-client-docker) — SQL Anywhere client container setup with a Python connectivity test.
-- [python-hosts-checker](https://github.com/carlok/python-hosts-checker) — AWS Lambda endpoint and certificate monitor with Telegram alerts.
 
 ## Agents, automation, and review workflows
 
