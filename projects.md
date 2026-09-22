@@ -60,6 +60,7 @@ permalink: /projects/
 
 ## Infrastructure, security, and operational tools
 
+- [fleetlens](https://github.com/carlok/fleetlens) — agentless, read-only health reports for a small Debian/Ubuntu VM fleet: Ansible over SSH, Python reports, optional email.
 - [forgepulse](https://github.com/carlok/forgepulse) — self-hosted GitHub traffic-history analytics: Rust, Svelte, SQLite, and Podman.
 - [portcullis](https://github.com/carlok/portcullis) — two-phase hardened Ubuntu 26.04 VM provisioner for Hetzner Cloud: ~30-second lockdown first, then a full CIS-style hardening pass, verified by 58 checks.
 - [Ubuntu-Hardening](https://github.com/carlok/Ubuntu-Hardening) — forked Ubuntu 24.04 CIS hardening script reference.
