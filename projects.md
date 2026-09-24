@@ -30,8 +30,9 @@ permalink: /projects/
 
 ## Math, computation, and formal experiments
 
-- [LeanFrontier](https://carlok.github.io/LeanFrontier/) — open Lean 4 library of machine-generated, kernel-verified mathematics on Mathlib.
+- [prove2me-logs](https://github.com/carlok/prove2me-logs) — working log of Prove2Me formalization activity: per-mission entries with theorem uuids, Lean environments, and what remains open; a record of the work, not an archive of the proofs.
 - [diaz-modulus-lean](https://github.com/carlok/diaz-modulus-lean) — Lean 4 formalization of a negative result on Diaz's modulus conjecture: a candidate's conjugate is a rational function of it, so no algebraic-hull matrix statement can separate it from an ordinary complex number.
+- [LeanFrontier](https://carlok.github.io/LeanFrontier/) — open Lean 4 library of machine-generated, kernel-verified mathematics on Mathlib.
 - [unstated-conclusions](https://github.com/carlok/unstated-conclusions) — the dual of unused-assumptions: Mathlib theorems whose proofs establish a stronger conclusion than they state, read off the last step of the proof term.
 - [platosdf](https://github.com/carlok/platosdf) — genetic evolver for invariant signed-distance-field solids.
 - [erdos-straus-offset-lean](https://github.com/carlok/erdos-straus-offset-lean) — Lean 4-verified fixed-divisor offset construction for 4/n = 1/x + 1/y + 1/z (not a proof of Erdős–Straus).
@@ -43,7 +44,6 @@ permalink: /projects/
 - [aristowrap](https://github.com/carlok/aristowrap) — Docker-first CLI around Harmonic Aristotle, Lean 4, and Mathlib.
 - [lean-corpus-density](https://github.com/carlok/lean-corpus-density) — dependency density in Lean 4 corpora, human and machine-generated, with evidence that machine mathematics accumulates. Reproducible from file headers.
 - [quadratula](https://github.com/carlok/quadratula) — how much of Le Floch's implication semilattice of Schröder's 990 quasigroup laws small quasigroups already witness: exhaustive enumeration to order 6, exact results to order 9, a provably optimal 17-quasigroup cover, and a generated report with independent checks.
-- [prove2me-logs](https://github.com/carlok/prove2me-logs) — working log of Prove2Me formalization activity: per-mission entries with theorem uuids, Lean environments, and what remains open; a record of the work, not an archive of the proofs.
 - [euclean](https://github.com/carlok/euclean) — can a machine recover mathematical structure from an anonymized formal theory and a proof checker alone?
 - [parsimagma](https://github.com/carlok/parsimagma) — magma signature and coverage engine over the Equational Theories Project law set.
 - [dratify](https://github.com/carlok/dratify) — in-process DRAT/DRUP unsatisfiability proof checker for Python and Rust: zero dependencies, with an optional Rust accelerator.
@@ -53,8 +53,8 @@ permalink: /projects/
 
 ## Infrastructure, security, and operational tools
 
-- [forgepulse](https://github.com/carlok/forgepulse) — self-hosted GitHub traffic-history analytics: Rust, Svelte, SQLite, and Podman.
 - [portcullis](https://github.com/carlok/portcullis) — two-phase hardened Ubuntu 26.04 VM provisioner for Hetzner Cloud: ~30-second lockdown first, then a full CIS-style hardening pass, verified by 58 checks.
+- [forgepulse](https://github.com/carlok/forgepulse) — self-hosted GitHub traffic-history analytics: Rust, Svelte, SQLite, and Podman.
 - [pacenotch](https://github.com/carlok/pacenotch) — Claude usage limits in the terminal, a tray icon and a window: a vertical notch on each bar marks where an even pace would leave you, so the fill says ahead-of-pace or room-to-spare at a glance.
 - [python-hosts-checker](https://github.com/carlok/python-hosts-checker) — AWS Lambda endpoint and certificate monitor with Telegram alerts.
 - [cold-path-server-podman](https://github.com/carlok/cold-path-server-podman) — run the Cold Path game server (jalhund/cold-path-server) in a Podman container.
@@ -62,6 +62,13 @@ permalink: /projects/
 - [Ubuntu-Hardening](https://github.com/carlok/Ubuntu-Hardening) — forked Ubuntu 24.04 CIS hardening script reference.
 - [dash](https://github.com/carlok/dash) — serverless DMARC aggregate-report parser for Gmail: extracts, parses, enriches failing sources, emails a summary.
 - [sa-client-docker](https://github.com/carlok/sa-client-docker) — SQL Anywhere client container setup with a Python connectivity test.
+
+## Agents, automation, and review workflows
+
+- [caciarabot](https://github.com/carlok/caciarabot) — Italian-first, self-hosted reactive Telegram group bot.
+- [topshift-trend](https://github.com/carlok/topshift-trend) — Telegram bot that watches new entries in GitHub monthly trending repositories.
+- [llm-source-security-review](https://github.com/carlok/llm-source-security-review) — Codex skill and playbook for defensive source-code security reviews.
+- [they-live-agent](https://github.com/carlok/they-live-agent) — local AR-style field-agent scanner experiment inspired by visual overlays.
 
 ## Visual and interactive systems
 
@@ -73,13 +80,6 @@ permalink: /projects/
 - [lifechess](https://github.com/carlok/lifechess) — chess-adjacent experiment mixing game structure and life-state modeling.
 - [cross-tetris](https://github.com/carlok/cross-tetris) — shared-queue 4-well cross variant of Tetris: Rust/WASM engine with a rule-based AI, played in the browser.
 - [collective-canvas-3d](https://github.com/kiwifarmit/collective-canvas-3d) — collaborative 3D painting app where phones act as brushes.
-
-## Agents, automation, and review workflows
-
-- [topshift-trend](https://github.com/carlok/topshift-trend) — Telegram bot that watches new entries in GitHub monthly trending repositories.
-- [caciarabot](https://github.com/carlok/caciarabot) — Italian-first, self-hosted reactive Telegram group bot.
-- [llm-source-security-review](https://github.com/carlok/llm-source-security-review) — Codex skill and playbook for defensive source-code security reviews.
-- [they-live-agent](https://github.com/carlok/they-live-agent) — local AR-style field-agent scanner experiment inspired by visual overlays.
 
 ## Writing, philosophy, and structured notes
 
