@@ -22,10 +22,10 @@ general results into nodes and gave nine others second proofs that import them,
 taking 2,865 lines to 856. The
 [second](https://github.com/carlok/diaz-modulus-lean/commit/d09d7ad) replaced the
 single 1,550-line proof of `aligned_norm_free_no_rational_log_matrix` with 44
-lines over three new nodes, its four dependent proofs going from 2,725 lines to
-320. The [third](https://github.com/carlok/diaz-modulus-lean/commit/09c2ded)
-split the 1,046-line helper block that Waldschmidt's Lemmas 4 and 7 each carried
-into eight nodes, taking the two proofs from 4,068 lines to 458.
+lines over three new nodes, its four dependent proofs going from 2,725 lines to 320.
+The [third](https://github.com/carlok/diaz-modulus-lean/commit/09c2ded) split the
+1,046-line helper block that Waldschmidt's Lemmas 4 and 7 each carried into eight
+nodes, taking the two proofs from 4,068 lines to 458.
 [prove2me-logs](https://github.com/carlok/prove2me-logs) records the same work
 from the platform side
 ([94ce1bc](https://github.com/carlok/prove2me-logs/commit/94ce1bc),
