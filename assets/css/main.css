@@ -265,13 +265,16 @@ a.badge:hover, a.badge:focus-visible { color: var(--accent); background: rgba(12
 .post-body { line-height: 1.75; color: var(--t3); }
 .post-body p { color: var(--t3); max-width: 640px; }
 .post-body h2 { margin-top: 36px; }
-.post-body code {
+.post-body code, .excerpt code, .content li code {
   font-family: var(--font-mono);
   background: var(--bg-raised);
   color: var(--text);
   padding: 2px 6px;
   border: 1px solid var(--line);
   border-radius: 3px;
+  /* Lean identifiers and module paths have no break opportunity and would
+     otherwise push the page wider than a phone screen. */
+  overflow-wrap: anywhere;
 }
 .post-footer {
   margin-top: 8px;

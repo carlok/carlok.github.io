@@ -30,6 +30,7 @@ permalink: /
   <a class="tab" href="/projects/">projects.sh</a>
   <a class="tab" href="/blog/">blog.sh</a>
   <a class="tab" href="/writing/">writing.sh</a>
+  <a class="tab" href="/math/">math.sh</a>
   <a class="tab" href="/cv/">cv.sh</a>
 </div>
 
@@ -38,6 +39,7 @@ permalink: /
   <li><a href="/projects/">projects/</a> — a curated atlas of public GitHub work</li>
   <li><a href="/blog/">blog/</a> — a public log of activity across my repositories</li>
   <li><a href="/writing/">writing/</a> — working drafts, article PDFs, and book material</li>
+  <li><a href="/math/">math/</a> — what is proved, what is open, and where the evidence lives</li>
   <li><a href="/cv/">cv/</a> — a short curriculum vitae</li>
 </ul>
 

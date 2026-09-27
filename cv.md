@@ -27,6 +27,7 @@ layout: default
   <a class="tab" href="/projects/">projects.sh</a>
   <a class="tab" href="/blog/">blog.sh</a>
   <a class="tab" href="/writing/">writing.sh</a>
+  <a class="tab" href="/math/">math.sh</a>
   <a class="tab active" href="/cv/">cv.sh</a>
 </div>
 
