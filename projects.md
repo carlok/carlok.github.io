@@ -31,6 +31,7 @@ permalink: /projects/
 
 ## Math, computation, and formal experiments
 
+- [consilean](https://github.com/carlok/consilean) — scores pairs of formal Lean statements by similarity and dependency-graph distance: similar-and-near pairs are duplicate candidates, similar-and-far pairs are candidate hidden connections, and the kernel decides whether a connection holds.
 - [LeanFrontier](https://carlok.github.io/LeanFrontier/) — open Lean 4 library of machine-generated, kernel-verified mathematics on Mathlib.
 - [prove2me-logs](https://github.com/carlok/prove2me-logs) — working log of Prove2Me formalization activity: per-mission entries with theorem uuids, Lean environments, and what remains open; a record of the work, not an archive of the proofs.
 - [diaz-modulus-lean](https://github.com/carlok/diaz-modulus-lean) — Lean 4 formalization of a negative result on Diaz's modulus conjecture: a candidate's conjugate is a rational function of it, so no algebraic-hull matrix statement can separate it from an ordinary complex number.
