@@ -36,17 +36,16 @@ permalink: /math/
 
 ## Externally registered
 
-Two results carry a record issued by someone other than me. In both cases an
-independent party re-checked the Lean proofs; neither record says the result is
-new.
+Three results carry a record issued by someone other than me. In each case an
+independent party re-checked the Lean proofs; no record says the result is new.
 
 - [sharp-symmetry-bounds-lean](https://github.com/carlok/sharp-symmetry-bounds-lean) — sharp symmetry bounds for real plane algebraic curves, registered as [PALOMAR-2026-09-18-000007](https://palomar-registry.org/entry?id=PALOMAR-2026-09-18-000007&version=1). The registry rebuilt the project in a sandbox, replayed the proof terms with an independent kernel and ran the Comparator. **Limit:** the public extraction covers Theorem 1 only.
+- [magma-1518-obstruction-lean](https://github.com/carlok/magma-1518-obstruction-lean) — one-generated (1518 + 3862)-magmas are trivial or the Z/3 shift, registered as [PALOMAR-2026-09-30-000005](https://palomar-registry.org/entry?id=PALOMAR-2026-09-30-000005&version=1). The registry rebuilt the project in a sandbox, replayed the proof terms with two independent kernels and ran the Comparator. The conjecture is Terence Tao's (Lean Zulip, 2024-11-29); what this adds is a proof, not a weaker hypothesis. **On priority:** the searchable venues were checked and nothing was found, which is not the same as a proof that nothing exists. **Limit:** the record covers Theorem A only; the cohomology obstruction and the explicit family of countermodels stay in the repository, outside it.
 - [moebius-transcendental-lean](https://github.com/carlok/moebius-transcendental-lean) — the conjugation degree on the transcendental locus, archived on Zenodo under concept DOI [10.5281/zenodo.22146649](https://doi.org/10.5281/zenodo.22146649). The small public piece of the Diaz work, and the one that closes a question rather than opening one.
 
 ## Proved, with the limit named
 
 - [diaz-modulus-lean](https://github.com/carlok/diaz-modulus-lean) — the large formalization. Since 24 September 2026 Gelfond–Schneider is a tree of eleven modules totalling 1,531 lines, restructuring the single 5,388-line formalization of M. Karatarakis and F. Wiedijk (arXiv:2603.24823, Apache-2.0). Nothing is declared as an axiom any more: the chains rest on Lean's own axioms. **Limit:** Diaz's conjecture itself remains open; the formalization maps the boundary rather than crossing it.
-- [magma-1518-obstruction-lean](https://github.com/carlok/magma-1518-obstruction-lean) — one-generated (1518 + 3862)-magmas are trivial or the Z/3 shift, machine-checked in core Lean with no axioms, and constant-coefficient magma cohomology cannot refute 1518 ⇒ 47/614/817/3862. The conjecture is Terence Tao's (Lean Zulip, 2024-11-29); what this adds is a proof, not a weaker hypothesis. **On priority:** the searchable venues were checked and nothing was found, which is not the same as a proof that nothing exists. **Limit:** the Palomar package is readiness only — nothing has been submitted or registered.
 - [erdos-straus-offset-lean](https://github.com/carlok/erdos-straus-offset-lean) — a Lean-verified fixed-divisor offset construction for 4/n = 1/x + 1/y + 1/z. **Limit:** the Erdős–Straus conjecture remains open; this is the construction, not a proof.
 
 ## Open, and stated as open
