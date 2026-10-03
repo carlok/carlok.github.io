@@ -29,6 +29,14 @@ permalink: /projects/
   <a class="tab" href="/cv/">cv.sh</a>
 </div>
 
+## Agents, automation, and review workflows
+
+- [caciarabot](https://github.com/carlok/caciarabot) — Italian-first, self-hosted reactive Telegram group bot.
+- [topshift-trend](https://github.com/carlok/topshift-trend) — Telegram bot that watches new entries in GitHub monthly trending repositories.
+- [llm-source-security-review](https://github.com/carlok/llm-source-security-review) — Codex skill and playbook for defensive source-code security reviews.
+- [they-live-agent](https://github.com/carlok/they-live-agent) — local AR-style field-agent scanner experiment inspired by visual overlays.
+- [slop-audit](https://github.com/carlok/slop-audit) — local multi-tool harness for AI-slop and formulaic prose: writing linters, descriptive stats and separate local AI-authorship signals, with no hosted detectors.
+
 ## Math, computation, and formal experiments
 
 - [diaz-modulus-lean](https://github.com/carlok/diaz-modulus-lean) — Lean 4 formalization of a negative result on Diaz's modulus conjecture: a candidate's conjugate is a rational function of it, so no algebraic-hull matrix statement can separate it from an ordinary complex number.
@@ -65,14 +73,6 @@ permalink: /projects/
 - [Ubuntu-Hardening](https://github.com/carlok/Ubuntu-Hardening) — forked Ubuntu 24.04 CIS hardening script reference.
 - [dash](https://github.com/carlok/dash) — serverless DMARC aggregate-report parser for Gmail: extracts, parses, enriches failing sources, emails a summary.
 - [sa-client-docker](https://github.com/carlok/sa-client-docker) — SQL Anywhere client container setup with a Python connectivity test.
-
-## Agents, automation, and review workflows
-
-- [topshift-trend](https://github.com/carlok/topshift-trend) — Telegram bot that watches new entries in GitHub monthly trending repositories.
-- [caciarabot](https://github.com/carlok/caciarabot) — Italian-first, self-hosted reactive Telegram group bot.
-- [llm-source-security-review](https://github.com/carlok/llm-source-security-review) — Codex skill and playbook for defensive source-code security reviews.
-- [they-live-agent](https://github.com/carlok/they-live-agent) — local AR-style field-agent scanner experiment inspired by visual overlays.
-- [slop-audit](https://github.com/carlok/slop-audit) — local multi-tool harness for AI-slop and formulaic prose: writing linters, descriptive stats and separate local AI-authorship signals, with no hosted detectors.
 
 ## Visual and interactive systems
 
