@@ -52,7 +52,7 @@ layout: default
     </ul>
     <h3>Articles (A), Interviews (I) &amp; Speeches (S)</h3>
     <ul>
-      <li>EEN (S, 2026), <a href="https://zenodo.org/records/18048181">Zenodo</a> (A), Links, FAIR, NODES (S, 2025), IUSTO (S, 2024), Polo ICT (S, 2022).</li>
+      <li>EEN (S, 2026), <a href="/math/">math</a> (A), Links, FAIR, NODES (S, 2025), IUSTO (S, 2024), Polo ICT (S, 2022).</li>
     </ul>
   </div>
   <div class="col">
