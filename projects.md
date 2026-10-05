@@ -31,16 +31,16 @@ permalink: /projects/
 
 ## Math, computation, and formal experiments
 
-- [lspace-det-sigma](https://github.com/carlok/lspace-det-sigma) — an inequality between determinant and signature for L-space knots: the note, its computations, and a Lean 4 proof of the lattice lemma.
-- [cdclkit](https://github.com/carlok/cdclkit) — readable, self-checking CDCL SAT solver, preprocessor, and encoding library: every answer comes with a certificate (models re-checked, UNSAT backed by a DRAT proof an independent checker replays).
-- [dratify](https://github.com/carlok/dratify) — in-process DRAT/DRUP unsatisfiability proof checker for Python and Rust: zero dependencies, with an optional Rust accelerator.
 - [LeanFrontier](https://carlok.github.io/LeanFrontier/) — open Lean 4 library of machine-generated, kernel-verified mathematics on Mathlib.
 - [diaz-modulus-lean](https://github.com/carlok/diaz-modulus-lean) — Lean 4 formalization of a negative result on Diaz's modulus conjecture: a candidate's conjugate is a rational function of it, so no algebraic-hull matrix statement can separate it from an ordinary complex number.
+- [consilean](https://github.com/carlok/consilean) — scores pairs of formal Lean statements by similarity and dependency-graph distance: similar-and-near pairs are duplicate candidates, similar-and-far pairs are candidate hidden connections, and the kernel decides whether a connection holds.
 - [prove2me-logs](https://github.com/carlok/prove2me-logs) — working log of Prove2Me formalization activity: per-mission entries with theorem uuids, Lean environments, and what remains open; a record of the work, not an archive of the proofs.
+- [cdclkit](https://github.com/carlok/cdclkit) — readable, self-checking CDCL SAT solver, preprocessor, and encoding library: every answer comes with a certificate (models re-checked, UNSAT backed by a DRAT proof an independent checker replays).
+- [dratify](https://github.com/carlok/dratify) — in-process DRAT/DRUP unsatisfiability proof checker for Python and Rust: zero dependencies, with an optional Rust accelerator.
+- [lspace-det-sigma](https://github.com/carlok/lspace-det-sigma) — an inequality between determinant and signature for L-space knots: the note, its computations, and a Lean 4 proof of the lattice lemma.
 - [curve-symmetry-lean](https://github.com/carlok/curve-symmetry-lean) — the note *Sharp symmetry bounds for real algebraic curves* (PDF and TeX) with a Lean 4 port that checks every theorem, lemma and remark of it: an irreducible, non-circular real plane curve of degree d has at most max(d, 2d−4) rotations and at most 2d Euclidean symmetries, both sharp in every degree, plus the d ≥ 5 classification of the extremal family and its exact ambient Möbius groups.
 - [magma-1518-obstruction-lean](https://github.com/carlok/magma-1518-obstruction-lean) — Lean 4 on ETP law 1518: one-generated (1518+3862)-magmas are trivial or the Z/3 shift, and constant-coefficient magma cohomology cannot refute 1518 ⇒ 47/614/817/3862.
 - [sharp-symmetry-bounds-lean](https://github.com/carlok/sharp-symmetry-bounds-lean) — Lean 4 formalization of sharp symmetry bounds for real plane algebraic curves: for an irreducible, non-circular real plane curve of degree d, the Euclidean symmetry group is finite, its rotation part cyclic of order at most max(d, 2d−4) and the full group of order at most 2d, with both bounds attained in every degree.
-- [consilean](https://github.com/carlok/consilean) — scores pairs of formal Lean statements by similarity and dependency-graph distance: similar-and-near pairs are duplicate candidates, similar-and-far pairs are candidate hidden connections, and the kernel decides whether a connection holds.
 - [unstated-conclusions](https://github.com/carlok/unstated-conclusions) — the dual of unused-assumptions: Mathlib theorems whose proofs establish a stronger conclusion than they state, read off the last step of the proof term.
 - [platosdf](https://github.com/carlok/platosdf) — genetic evolver for invariant signed-distance-field solids.
 - [erdos-straus-offset-lean](https://github.com/carlok/erdos-straus-offset-lean) — Lean 4-verified fixed-divisor offset construction for 4/n = 1/x + 1/y + 1/z (not a proof of Erdős–Straus).
@@ -55,6 +55,15 @@ permalink: /projects/
 - [best-of-lean4](https://github.com/carlok/best-of-lean4) — curated list of awesome Lean 4 projects.
 - [modular-zeta3-acceleration](https://github.com/carlok/modular-zeta3-acceleration) — SageMath pipeline for Apéry-type zeta(3) acceleration.
 
+## Agents, automation, and review workflows
+
+- [roundstorm](https://github.com/carlok/roundstorm) — local-first app where persistent, heterogeneous AI researchers deliberate for a set number of rounds on a hard question; macOS, Linux and Windows.
+- [caciarabot](https://github.com/carlok/caciarabot) — Italian-first, self-hosted reactive Telegram group bot.
+- [topshift-trend](https://github.com/carlok/topshift-trend) — Telegram bot that watches new entries in GitHub monthly trending repositories.
+- [llm-source-security-review](https://github.com/carlok/llm-source-security-review) — Codex skill and playbook for defensive source-code security reviews.
+- [they-live-agent](https://github.com/carlok/they-live-agent) — local AR-style field-agent scanner experiment inspired by visual overlays.
+- [slop-audit](https://github.com/carlok/slop-audit) — local multi-tool harness for AI-slop and formulaic prose: writing linters, descriptive stats and separate local AI-authorship signals, with no hosted detectors.
+
 ## Infrastructure, security, and operational tools
 
 - [forgepulse](https://github.com/carlok/forgepulse) — self-hosted GitHub traffic-history analytics: Rust, Svelte, SQLite, and Podman.
@@ -66,15 +75,6 @@ permalink: /projects/
 - [Ubuntu-Hardening](https://github.com/carlok/Ubuntu-Hardening) — forked Ubuntu 24.04 CIS hardening script reference.
 - [dash](https://github.com/carlok/dash) — serverless DMARC aggregate-report parser for Gmail: extracts, parses, enriches failing sources, emails a summary.
 - [sa-client-docker](https://github.com/carlok/sa-client-docker) — SQL Anywhere client container setup with a Python connectivity test.
-
-## Agents, automation, and review workflows
-
-- [roundstorm](https://github.com/carlok/roundstorm) — local-first app where persistent, heterogeneous AI researchers deliberate for a set number of rounds on a hard question; macOS, Linux and Windows.
-- [caciarabot](https://github.com/carlok/caciarabot) — Italian-first, self-hosted reactive Telegram group bot.
-- [topshift-trend](https://github.com/carlok/topshift-trend) — Telegram bot that watches new entries in GitHub monthly trending repositories.
-- [llm-source-security-review](https://github.com/carlok/llm-source-security-review) — Codex skill and playbook for defensive source-code security reviews.
-- [they-live-agent](https://github.com/carlok/they-live-agent) — local AR-style field-agent scanner experiment inspired by visual overlays.
-- [slop-audit](https://github.com/carlok/slop-audit) — local multi-tool harness for AI-slop and formulaic prose: writing linters, descriptive stats and separate local AI-authorship signals, with no hosted detectors.
 
 ## Visual and interactive systems
 
