@@ -1,0 +1,7 @@
+---
+title: "dratify 0.1.7 fixes a soundness hole, and says why PySAT's CaDiCaL proofs fail"
+date: 2026-10-05
+tags: [security, tool]
+---
+
+[dratify](https://github.com/carlok/dratify) 0.1.6 fixed the README's PySAT example — it loaded formulas with PySAT's own parser, which stops at the `%` line every SATLIB file ends with — and closed a release path that let `workflow_dispatch` publish from a branch, with the `pypi` and `crates` environments now restricted to `v*` tags ([108dd50](https://github.com/carlok/dratify/commit/108dd50), [5d0bb47](https://github.com/carlok/dratify/commit/5d0bb47)). [0.1.7](https://github.com/carlok/dratify/blob/main/CHANGELOG.md) is the security fix: three checker bugs found while tracing why PySAT's CaDiCaL proofs do not verify, one of them a soundness hole where the pure-Python checker accepted refutations of satisfiable formulas when a list of steps held a negative literal — reachable through `check_proof`, though not from cdclkit's own solver, and text proofs were never affected — alongside an unbounded literal that could size arrays for 10¹¹ variables and two false rejections, both checkers refusing valid proofs in which a lemma arrived unit at the root ([61165f9](https://github.com/carlok/dratify/commit/61165f9)). The PySAT failure itself is not the checker's: the binding reads every CaDiCaL proof before flushing it, and with the documented workaround all four CaDiCaL versions verify 50 of 50, where glucose and Lingeling already did ([2823854](https://github.com/carlok/dratify/commit/2823854)).

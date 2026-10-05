@@ -31,6 +31,7 @@ permalink: /projects/
 
 ## Math, computation, and formal experiments
 
+- [lspace-det-sigma](https://github.com/carlok/lspace-det-sigma) — an inequality between determinant and signature for L-space knots: the note, its computations, and a Lean 4 proof of the lattice lemma.
 - [cdclkit](https://github.com/carlok/cdclkit) — readable, self-checking CDCL SAT solver, preprocessor, and encoding library: every answer comes with a certificate (models re-checked, UNSAT backed by a DRAT proof an independent checker replays).
 - [dratify](https://github.com/carlok/dratify) — in-process DRAT/DRUP unsatisfiability proof checker for Python and Rust: zero dependencies, with an optional Rust accelerator.
 - [LeanFrontier](https://carlok.github.io/LeanFrontier/) — open Lean 4 library of machine-generated, kernel-verified mathematics on Mathlib.
@@ -68,6 +69,7 @@ permalink: /projects/
 
 ## Agents, automation, and review workflows
 
+- [roundstorm](https://github.com/carlok/roundstorm) — local-first app where persistent, heterogeneous AI researchers deliberate for a set number of rounds on a hard question; macOS, Linux and Windows.
 - [caciarabot](https://github.com/carlok/caciarabot) — Italian-first, self-hosted reactive Telegram group bot.
 - [topshift-trend](https://github.com/carlok/topshift-trend) — Telegram bot that watches new entries in GitHub monthly trending repositories.
 - [llm-source-security-review](https://github.com/carlok/llm-source-security-review) — Codex skill and playbook for defensive source-code security reviews.
