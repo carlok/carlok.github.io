@@ -1,0 +1,7 @@
+---
+title: "LeanFrontier: the Furstenberg integers sit densely inside the profinite completion"
+date: 2026-10-08
+tags: [lean4, math, project]
+---
+
+The step [Field Note 24](/blog/2026/10/07/leanfrontier-field-notes-23-24/) named as its next target has landed: [qazW12345](https://github.com/qazW12345) added a module proving that Mathlib's canonical map from the integers into their additive profinite completion induces exactly the Furstenberg topology and is a dense embedding ([#491](https://github.com/carlok/LeanFrontier/pull/491)) — `furstenbergTopology_eq_induced_profiniteCompletion` and `isDenseEmbedding_furstenbergProfiniteMap` — so Furstenberg's evenly spaced topology is the integers as a dense subset of a compact group. The note was revised in place later the same day rather than given a second entry, and now stands at 110 modules and 90 internal import edges ([#495](https://github.com/carlok/LeanFrontier/pull/495)). That revision also supersedes the morning's account of the triviality probes: they were written into a scratch file without their module's namespace, opens or variables and with Lean's automatic variables on, so an unknown name silently became a universally quantified one and most statements were probed as a more general claim than the one submitted ([#489](https://github.com/carlok/LeanFrontier/pull/489)). Each statement is now probed the way its module writes it, a statement that cannot be stated is reported as "not elaborated" with Lean's reason, and re-reading all 303 accepted entrypoints leaves every historical rejection sound.
