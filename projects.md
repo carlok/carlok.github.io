@@ -29,16 +29,27 @@ permalink: /projects/
   <a class="tab" href="/cv/">cv.sh</a>
 </div>
 
+## Visual and interactive systems
+
+- [deck-lovers](https://github.com/carlok/deck-lovers) — Markdown-to-HTML deck with live audience likes and projector sync.
+- [neon-bumper-cars](https://github.com/carlok/neon-bumper-cars) — multiplayer WebSocket party game for live events.
+- [agility-trainer](https://github.com/carlok/agility-trainer) — mobile-first bodyweight agility trainer.
+- [spriter](https://github.com/carlok/spriter) — browser-only tool that turns a raster image into a pixel-art sprite. No upload, no build, no dependencies.
+- [solids-hunter](https://github.com/carlok/solids-hunter) — first-person boolean-rule hunt: Babylon.js game with gamepad support and a shadow-pass watchdog.
+- [lifechess](https://github.com/carlok/lifechess) — chess-adjacent experiment mixing game structure and life-state modeling.
+- [cross-tetris](https://github.com/carlok/cross-tetris) — shared-queue 4-well cross variant of Tetris: Rust/WASM engine with a rule-based AI, played in the browser.
+- [collective-canvas-3d](https://github.com/kiwifarmit/collective-canvas-3d) — collaborative 3D painting app where phones act as brushes.
+
 ## Math, computation, and formal experiments
 
-- [diaz-modulus-lean](https://github.com/carlok/diaz-modulus-lean) — Lean 4 formalization of a negative result on Diaz's modulus conjecture: a candidate's conjugate is a rational function of it, so no algebraic-hull matrix statement can separate it from an ordinary complex number.
 - [prove2me-logs](https://github.com/carlok/prove2me-logs) — working log of Prove2Me formalization activity: per-mission entries with theorem uuids, Lean environments, and what remains open; a record of the work, not an archive of the proofs.
-- [curve-symmetry-lean](https://github.com/carlok/curve-symmetry-lean) — the note *Sharp symmetry bounds for real algebraic curves* (PDF and TeX) with a Lean 4 port that checks every theorem, lemma and remark of it: an irreducible, non-circular real plane curve of degree d has at most max(d, 2d−4) rotations and at most 2d Euclidean symmetries, both sharp in every degree, plus the d ≥ 5 classification of the extremal family and its exact ambient Möbius groups.
 - [LeanFrontier](https://carlok.github.io/LeanFrontier/) — open Lean 4 library of machine-generated, kernel-verified mathematics on Mathlib.
-- [lspace-det-sigma](https://github.com/carlok/lspace-det-sigma) — an inequality between determinant and signature for L-space knots: the note, its computations, and a Lean 4 proof of the lattice lemma.
-- [consilean](https://github.com/carlok/consilean) — scores pairs of formal Lean statements by similarity and dependency-graph distance: similar-and-near pairs are duplicate candidates, similar-and-far pairs are candidate hidden connections, and the kernel decides whether a connection holds.
 - [cdclkit](https://github.com/carlok/cdclkit) — readable, self-checking CDCL SAT solver, preprocessor, and encoding library: every answer comes with a certificate (models re-checked, UNSAT backed by a DRAT proof an independent checker replays).
 - [dratify](https://github.com/carlok/dratify) — in-process DRAT/DRUP unsatisfiability proof checker for Python and Rust: zero dependencies, with an optional Rust accelerator.
+- [diaz-modulus-lean](https://github.com/carlok/diaz-modulus-lean) — Lean 4 formalization of a negative result on Diaz's modulus conjecture: a candidate's conjugate is a rational function of it, so no algebraic-hull matrix statement can separate it from an ordinary complex number.
+- [curve-symmetry-lean](https://github.com/carlok/curve-symmetry-lean) — the note *Sharp symmetry bounds for real algebraic curves* (PDF and TeX) with a Lean 4 port that checks every theorem, lemma and remark of it: an irreducible, non-circular real plane curve of degree d has at most max(d, 2d−4) rotations and at most 2d Euclidean symmetries, both sharp in every degree, plus the d ≥ 5 classification of the extremal family and its exact ambient Möbius groups.
+- [lspace-det-sigma](https://github.com/carlok/lspace-det-sigma) — an inequality between determinant and signature for L-space knots: the note, its computations, and a Lean 4 proof of the lattice lemma.
+- [consilean](https://github.com/carlok/consilean) — scores pairs of formal Lean statements by similarity and dependency-graph distance: similar-and-near pairs are duplicate candidates, similar-and-far pairs are candidate hidden connections, and the kernel decides whether a connection holds.
 - [magma-1518-obstruction-lean](https://github.com/carlok/magma-1518-obstruction-lean) — Lean 4 on ETP law 1518: one-generated (1518+3862)-magmas are trivial or the Z/3 shift, and constant-coefficient magma cohomology cannot refute 1518 ⇒ 47/614/817/3862.
 - [sharp-symmetry-bounds-lean](https://github.com/carlok/sharp-symmetry-bounds-lean) — Lean 4 formalization of sharp symmetry bounds for real plane algebraic curves: for an irreducible, non-circular real plane curve of degree d, the Euclidean symmetry group is finite, its rotation part cyclic of order at most max(d, 2d−4) and the full group of order at most 2d, with both bounds attained in every degree.
 - [unstated-conclusions](https://github.com/carlok/unstated-conclusions) — the dual of unused-assumptions: Mathlib theorems whose proofs establish a stronger conclusion than they state, read off the last step of the proof term.
@@ -75,17 +86,6 @@ permalink: /projects/
 - [Ubuntu-Hardening](https://github.com/carlok/Ubuntu-Hardening) — forked Ubuntu 24.04 CIS hardening script reference.
 - [dash](https://github.com/carlok/dash) — serverless DMARC aggregate-report parser for Gmail: extracts, parses, enriches failing sources, emails a summary.
 - [sa-client-docker](https://github.com/carlok/sa-client-docker) — SQL Anywhere client container setup with a Python connectivity test.
-
-## Visual and interactive systems
-
-- [deck-lovers](https://github.com/carlok/deck-lovers) — Markdown-to-HTML deck with live audience likes and projector sync.
-- [neon-bumper-cars](https://github.com/carlok/neon-bumper-cars) — multiplayer WebSocket party game for live events.
-- [agility-trainer](https://github.com/carlok/agility-trainer) — mobile-first bodyweight agility trainer.
-- [spriter](https://github.com/carlok/spriter) — browser-only tool that turns a raster image into a pixel-art sprite. No upload, no build, no dependencies.
-- [solids-hunter](https://github.com/carlok/solids-hunter) — first-person boolean-rule hunt: Babylon.js game with gamepad support and a shadow-pass watchdog.
-- [lifechess](https://github.com/carlok/lifechess) — chess-adjacent experiment mixing game structure and life-state modeling.
-- [cross-tetris](https://github.com/carlok/cross-tetris) — shared-queue 4-well cross variant of Tetris: Rust/WASM engine with a rule-based AI, played in the browser.
-- [collective-canvas-3d](https://github.com/kiwifarmit/collective-canvas-3d) — collaborative 3D painting app where phones act as brushes.
 
 ## Writing, philosophy, and structured notes
 
