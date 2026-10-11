@@ -77,6 +77,7 @@ permalink: /projects/
 
 ## Infrastructure, security, and operational tools
 
+- [hermes-podman](https://github.com/carlok/hermes-podman) — headless Hermes Agent gateway on rootless Podman: image pinned by tag and digest, Makefile and scripts for setup, backup, restore, upgrade and uninstall, reboot survival, CI-exercised on Ubuntu 26.04.
 - [forgepulse](https://github.com/carlok/forgepulse) — self-hosted GitHub traffic-history analytics: Rust, Svelte, SQLite, and Podman.
 - [fleetlens](https://github.com/carlok/fleetlens) — agentless, read-only health reports for a small Debian/Ubuntu VM fleet: Ansible over SSH, Python reports, optional email.
 - [pacenotch](https://github.com/carlok/pacenotch) — Claude usage limits in the terminal, a tray icon and a window: a vertical notch on each bar marks where an even pace would leave you, so the fill says ahead-of-pace or room-to-spare at a glance.
