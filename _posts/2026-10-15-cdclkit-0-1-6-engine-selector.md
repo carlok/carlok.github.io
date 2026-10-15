@@ -1,0 +1,9 @@
+---
+title: "cdclkit 0.1.6: CDCLKIT_ENGINE now does what the documentation said it did"
+date: 2026-10-15
+tags: [tool]
+---
+
+[cdclkit](https://github.com/carlok/cdclkit) is tagged [v0.1.6](https://github.com/carlok/cdclkit/releases/tag/v0.1.6), and the fix is a variable that never existed as documentation claimed ([35e9b14](https://github.com/carlok/cdclkit/commit/35e9b14)). `AGENTS.md` and the `cdclkit.native` docstring both said `CDCLKIT_ENGINE` selected the engine and that the native engine was never chosen implicitly; nothing read the variable, and `solve --adaptive` and `solve -j N` used native whenever the build was installed. Both paths now honour `CDCLKIT_ENGINE=python|native`, print `c engine: …` so a result says which engine produced it, and exit 1 with a message on an unknown value or on `native` without the build, where the silent fallback used to be. Defaults are unchanged — native when installed for `--adaptive` and `-j`, Python for plain `solve` — and the engines are bit-exact, so the setting moves the speed and not the answer.
+
+The same tag carries the closing of a roadmap item that had been pending since the roadmap was written: reporting the trailing `%` that SATLIB files end with to CaDiCaL and PySAT ([113686b](https://github.com/carlok/cdclkit/commit/113686b)). The answer is not to report it. [PySAT declined exactly this in 2023](https://github.com/pysathq/pysat/issues/146), on the grounds that the `uf*` files predate the format and should be fixed rather than the parser, CaDiCaL 3.0.1 and kissat 4.0.4 are strict by design and neither `--relaxed` nor `-f` covers it, and the README half was already done. Checking that turned up a different upstream bug, [reported to kissat the same day](/blog/2026/10/15/kissat-parse-line-number/), and the roadmap item is closed as deliberately unreported rather than left open.
