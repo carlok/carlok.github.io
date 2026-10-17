@@ -1,0 +1,7 @@
+---
+title: "portcullis: ENABLE_IPV6 decides whether the VM gets an IPv6 address at all"
+date: 2026-10-16
+tags: [security, tool]
+---
+
+[portcullis](https://github.com/carlok/portcullis) — the two-phase Hetzner provisioner that locks a VM down in about thirty seconds and then hardens it against a 58-check list — now takes `ENABLE_IPV6` as a first-class setting (default `true`), validated by `preflight.py` in the words it accepts elsewhere (`true`/`false`, `1`/`0`, `yes`/`no`, `on`/`off`, blank meaning the default) and reaching the API through `build_public_net()`, which always asks for IPv4 and for IPv6 only when the flag says so ([78ecce3](https://github.com/carlok/portcullis/commit/78ecce3)). Set to `false`, the firewall follows: `firewall_sources()` drops `::/0` and keeps `0.0.0.0/0`, on both the port-22 rule created with the server and the lockdown rule that replaces it once Phase 1 has closed 22, so the only rule the VM ever has is IPv4-only and no address is allocated to be forgotten. What the guest does is unchanged — the hardening scripts disable IPv6 inside the OS either way — so with `true` the address is reserved and unused unless someone deliberately re-enables it, and the README says exactly that instead of leaving the gap between "allocated" and "reachable" to be discovered. The `.env.example` entry, the config table and tests for the parser, both firewall shapes and the public-network object came with it.
