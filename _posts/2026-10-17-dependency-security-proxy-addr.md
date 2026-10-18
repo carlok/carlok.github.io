@@ -1,0 +1,7 @@
+---
+title: "neon-bumper-cars and collective-starship-game: proxy-addr IP spoofing, a source-map-js denial of service, and rate limiting from a CodeQL alert"
+date: 2026-10-17
+tags: [security, games]
+---
+
+Two of the browser games picked up security fixes. [neon-bumper-cars](https://github.com/carlok/neon-bumper-cars) moves its transitive `proxy-addr` from 2.0.7 to 2.0.8, which is [GHSA-jqcg-44mw-7w3h](https://github.com/jshttp/proxy-addr/security/advisories/GHSA-jqcg-44mw-7w3h) / CVE-2026-90711 — IP spoofing through an IPv4-mapped IPv6 trust subnet, reached through `express` — shipped as [Dependabot's bump](https://github.com/carlok/neon-bumper-cars/pull/7) and then a [hand-checked patch](https://github.com/carlok/neon-bumper-cars/pull/8) that confirms the root lockfile resolves to the patched version ([d3498db](https://github.com/carlok/neon-bumper-cars/commit/d3498db)). [collective-starship-game](https://github.com/carlok/collective-starship-game) takes `source-map-js` 1.2.2 for the high-severity denial of service in [GHSA-68fv-2mgg-jv7q](https://github.com/advisories/GHSA-68fv-2mgg-jv7q) (CVE-2026-93749), and the same pull request answers CodeQL's `js/missing-rate-limiting` on the SPA fallback route — `sendFile` with no limit in front of it — by putting `express-rate-limit` at 600 requests per minute per IP across the whole Express app, ahead of the static and Vite handlers ([8d4ed28](https://github.com/carlok/collective-starship-game/commit/8d4ed28), [#6](https://github.com/carlok/collective-starship-game/pull/6)).
