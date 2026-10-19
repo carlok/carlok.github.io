@@ -57,6 +57,7 @@ permalink: /projects/
 
 ## Visual and interactive systems
 
+- [staffarda](https://github.com/carlok/staffarda) — procedural Blender reconstruction of the ground floor of the Staffarda Abbey guesthouse, rebuilt from three photos: rib vault, four columns, weathered materials, a two-minute walkthrough, and a first-order thrust-line check of the vault.
 - [solids-hunter](https://github.com/carlok/solids-hunter) — first-person boolean-rule hunt: Babylon.js game with gamepad support and a shadow-pass watchdog.
 - [agility-trainer](https://github.com/carlok/agility-trainer) — mobile-first bodyweight agility trainer.
 - [consculpta](https://github.com/carlok/consculpta) — browser-only breeder of 3D sculptures: formulas over simplex noise, mutated as trees, raymarched in WebGL 2, with a genome editor, Shadertoy export and an optional bring-your-own-key AI co-breeder.

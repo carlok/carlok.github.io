@@ -1,0 +1,11 @@
+---
+title: "storygen, eclipse-3d-sim and pickmydegree: a path injection, an XSS in Vue's SSR, and what the browser was remembering"
+date: 2026-10-18
+tags: [security, tool]
+---
+
+Three of the older browser projects cleared their security backlog. [storygen](https://github.com/carlok/storygen) — short story videos rendered inside a container — closes six open CodeQL security-extended findings by hardening `/api/image/{filename}` with a basename check, a `realpath` normalisation and a root-prefix test that CodeQL recognises rather than a string comparison, and its CSP tests now parse the header into directives and compare URL sources with `urlparse` instead of substring-matching the whole string ([4313707](https://github.com/carlok/storygen/commit/4313707), [#6](https://github.com/carlok/storygen/pull/6)).
+
+[eclipse-3d-sim](https://github.com/carlok/eclipse-3d-sim), the local eclipse-visibility simulator, stops persisting observer coordinates in `localStorage`, hashes the COP30 cache filenames, and restricts DEM opens to the configured terrain directories — three findings about storage and path handling in the same area ([bee7d54](https://github.com/carlok/eclipse-3d-sim/commit/bee7d54), [#2](https://github.com/carlok/eclipse-3d-sim/pull/2)).
+
+[pickmydegree](https://github.com/carlok/pickmydegree) takes the Vue stack from 3.5.28 to 3.5.44 for [GHSA-g2v6-rqmx-r4w6](https://github.com/advisories/GHSA-g2v6-rqmx-r4w6), an XSS in server-side rendering where a missing carriage return in the attribute-name blacklist let an attribute name run on into the next one; the alert covers both `vue` and `@vue/server-renderer`, which have to move together ([8c99b7b](https://github.com/carlok/pickmydegree/commit/8c99b7b), [547df3b](https://github.com/carlok/pickmydegree/commit/547df3b), [#5](https://github.com/carlok/pickmydegree/pull/5)). The same day's `source-map-js` 1.2.2 bumps elsewhere in the fleet — [agility-trainer](https://github.com/carlok/agility-trainer), [solids-hunter](https://github.com/carlok/solids-hunter), [cross-tetris](https://github.com/carlok/cross-tetris) — were Dependabot's, taking the parser past the same denial of service already described for [the two games](/blog/2026/10/17/dependency-security-proxy-addr/).
