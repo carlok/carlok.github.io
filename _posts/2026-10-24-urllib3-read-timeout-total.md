@@ -1,0 +1,9 @@
+---
+title: "contributed to urllib3: Timeout.read_timeout should honour total before a connection starts"
+date: 2026-10-24
+tags: [contribution, tool]
+---
+
+Opened [urllib3#5336](https://github.com/urllib3/urllib3/pull/5336), a one-property fix in `Timeout.read_timeout`. The docstring says that when a read timeout and a total are both given "the shorter timeout will be applied", but before `start_connect()` has been called the property returns `read` as it is, so the longer one wins: `Timeout(total=1, read=2).read_timeout` is `2`. After the connect clock starts it already returns `min(total - elapsed, read)`, so the patch makes the not-started branch agree — no time has elapsed, hence `min(total, read)`, the same value it returns immediately after `start_connect()`.
+
+The scope is deliberately narrow: urllib3's own pool reads `read_timeout` only in `_make_request`, after calling `start_connect()` on a fresh copy of the timeout, so requests through `PoolManager` or `HTTPConnectionPool` do not change, and only code reading the property directly is affected. The branch returns `min()` rather than the `TimeoutStateError` the docstring also implies, because that branch has returned a number since 2014 and raising would break callers that work today; the docstring is corrected to describe both cases. The new test sits next to the existing `Timeout(total=10, read=7)` case, covers only a read timeout shorter than the total, and also checks the value does not grow once `start_connect()` is called — it fails on `main` with `assert 2 == 1`, and `test/test_util.py` plus `nox -s lint` (mypy included) pass with the fix. A search of urllib3's issues and pull requests, open and closed, found nothing reporting the discrepancy. The pull request is open, waiting on CI for the other interpreters.
