@@ -57,6 +57,7 @@ permalink: /projects/
 
 ## Infrastructure, security, and operational tools
 
+- [matrix-podman-stack](https://github.com/carlok/matrix-podman-stack) — private Matrix homeserver on rootless Podman: Synapse and Postgres, Element Web, an optional Telegram bridge, optional Prometheus/Grafana, NATS and Valkey as a bot bus, all bind-mounted under one `DATA_DIR` and publishing on `127.0.0.1` only, with the bot accounts driven by a `bots.yaml` file.
 - [portcullis](https://github.com/carlok/portcullis) — two-phase hardened Ubuntu 26.04 VM provisioner for Hetzner Cloud: ~30-second lockdown first, then a full CIS-style hardening pass, verified by 58 checks.
 - [forgepulse](https://github.com/carlok/forgepulse) — self-hosted GitHub traffic-history analytics: Rust, Svelte, SQLite, and Podman.
 - [python-hosts-checker](https://github.com/carlok/python-hosts-checker) — AWS Lambda endpoint and certificate monitor with Telegram alerts.
