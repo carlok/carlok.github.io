@@ -1,0 +1,9 @@
+---
+title: "matrix-podman-stack: Postgres 18 with a migration script, a Synapse health smoke test, and a bot bus on nats-py 2.16 and redis 8.1"
+date: 2026-10-27
+tags: [podman, project]
+---
+
+A day after [going public](/blog/2026/10/26/matrix-podman-stack-public/), [matrix-podman-stack](https://github.com/carlok/matrix-podman-stack) moved both Postgres services to `18.6-bookworm` with the official `/var/lib/postgresql` volume layout, and shipped `upgrade-postgres.sh` for data that is already on 16 — the reason the change is one pull request and not a compose edit ([#23](https://github.com/carlok/matrix-podman-stack/pull/23), [2669435](https://github.com/carlok/matrix-podman-stack/commit/2669435)). A migration that completes is not the same as a Synapse that starts, so `verify-synapse-postgres.sh` now walks the stack's own `/health` endpoint after the upgrade and records what it saw ([#25](https://github.com/carlok/matrix-podman-stack/pull/25), [d0ac04b](https://github.com/carlok/matrix-podman-stack/commit/d0ac04b)).
+
+The example bot's optional `bus` profile moved with its clients: `nats-py` 2.10.0 → 2.16.0 and `redis` 5.2.1 → 8.1.0 for the Valkey hooks, which meant an explicit `close()` for redis-py 8 and a drain on shutdown for nats-py 2.16, both covered by new unit tests ([#26](https://github.com/carlok/matrix-podman-stack/pull/26), [d33e146](https://github.com/carlok/matrix-podman-stack/commit/d33e146)). The same stretch took a hardening pass over the compose runtime, the Synapse bootstrap and the CI audit ([#16](https://github.com/carlok/matrix-podman-stack/pull/16)) and consolidated the Dependabot queue — Grafana 13.2.4, Valkey, Garage and Ollama tag bumps, pytest 9, matrix-nio 0.26 ([#22](https://github.com/carlok/matrix-podman-stack/pull/22), [#24](https://github.com/carlok/matrix-podman-stack/pull/24), [#15](https://github.com/carlok/matrix-podman-stack/pull/15)).
