@@ -29,20 +29,6 @@ permalink: /projects/
   <a class="tab" href="/cv/">cv.sh</a>
 </div>
 
-## Infrastructure, security, and operational tools
-
-- [matrix-podman-stack](https://github.com/carlok/matrix-podman-stack) — private Matrix homeserver on rootless Podman: Synapse and Postgres, Element Web, an optional Telegram bridge, optional Prometheus/Grafana, NATS and Valkey as a bot bus, all bind-mounted under one `DATA_DIR` and publishing on `127.0.0.1` only, with the bot accounts driven by a `bots.yaml` file.
-- [fleetlens](https://github.com/carlok/fleetlens) — agentless, read-only health reports for a small Debian/Ubuntu VM fleet: Ansible over SSH, Python reports, optional email.
-- [forgepulse](https://github.com/carlok/forgepulse) — self-hosted GitHub traffic-history analytics: Rust, Svelte, SQLite, and Podman.
-- [portcullis](https://github.com/carlok/portcullis) — two-phase hardened Ubuntu 26.04 VM provisioner for Hetzner Cloud: ~30-second lockdown first, then a full CIS-style hardening pass, verified by 58 checks.
-- [python-hosts-checker](https://github.com/carlok/python-hosts-checker) — AWS Lambda endpoint and certificate monitor with Telegram alerts.
-- [sa-client-docker](https://github.com/carlok/sa-client-docker) — SQL Anywhere client container setup with a Python connectivity test.
-- [dash](https://github.com/carlok/dash) — serverless DMARC aggregate-report parser for Gmail: extracts, parses, enriches failing sources, emails a summary.
-- [hermes-podman](https://github.com/carlok/hermes-podman) — headless Hermes Agent gateway on rootless Podman: image pinned by tag and digest, Makefile and scripts for setup, backup, restore, upgrade and uninstall, reboot survival, CI-exercised on Ubuntu 26.04.
-- [pacenotch](https://github.com/carlok/pacenotch) — Claude usage limits in the terminal, a tray icon and a window: a vertical notch on each bar marks where an even pace would leave you, so the fill says ahead-of-pace or room-to-spare at a glance.
-- [cold-path-server-podman](https://github.com/carlok/cold-path-server-podman) — run the Cold Path game server (jalhund/cold-path-server) in a Podman container.
-- [Ubuntu-Hardening](https://github.com/carlok/Ubuntu-Hardening) — forked Ubuntu 24.04 CIS hardening script reference.
-
 ## Agents, automation, and review workflows
 
 - [caciarabot](https://github.com/carlok/caciarabot) — Italian-first, self-hosted reactive Telegram group bot.
@@ -51,6 +37,20 @@ permalink: /projects/
 - [they-live-agent](https://github.com/carlok/they-live-agent) — local AR-style field-agent scanner experiment inspired by visual overlays.
 - [llm-source-security-review](https://github.com/carlok/llm-source-security-review) — Codex skill and playbook for defensive source-code security reviews.
 - [topshift-trend](https://github.com/carlok/topshift-trend) — Telegram bot that watches new entries in GitHub monthly trending repositories.
+
+## Infrastructure, security, and operational tools
+
+- [forgepulse](https://github.com/carlok/forgepulse) — self-hosted GitHub traffic-history analytics: Rust, Svelte, SQLite, and Podman.
+- [matrix-podman-stack](https://github.com/carlok/matrix-podman-stack) — private Matrix homeserver on rootless Podman: Synapse and Postgres, Element Web, an optional Telegram bridge, optional Prometheus/Grafana, NATS and Valkey as a bot bus, all bind-mounted under one `DATA_DIR` and publishing on `127.0.0.1` only, with the bot accounts driven by a `bots.yaml` file.
+- [fleetlens](https://github.com/carlok/fleetlens) — agentless, read-only health reports for a small Debian/Ubuntu VM fleet: Ansible over SSH, Python reports, optional email.
+- [portcullis](https://github.com/carlok/portcullis) — two-phase hardened Ubuntu 26.04 VM provisioner for Hetzner Cloud: ~30-second lockdown first, then a full CIS-style hardening pass, verified by 58 checks.
+- [python-hosts-checker](https://github.com/carlok/python-hosts-checker) — AWS Lambda endpoint and certificate monitor with Telegram alerts.
+- [sa-client-docker](https://github.com/carlok/sa-client-docker) — SQL Anywhere client container setup with a Python connectivity test.
+- [dash](https://github.com/carlok/dash) — serverless DMARC aggregate-report parser for Gmail: extracts, parses, enriches failing sources, emails a summary.
+- [hermes-podman](https://github.com/carlok/hermes-podman) — headless Hermes Agent gateway on rootless Podman: image pinned by tag and digest, Makefile and scripts for setup, backup, restore, upgrade and uninstall, reboot survival, CI-exercised on Ubuntu 26.04.
+- [pacenotch](https://github.com/carlok/pacenotch) — Claude usage limits in the terminal, a tray icon and a window: a vertical notch on each bar marks where an even pace would leave you, so the fill says ahead-of-pace or room-to-spare at a glance.
+- [cold-path-server-podman](https://github.com/carlok/cold-path-server-podman) — run the Cold Path game server (jalhund/cold-path-server) in a Podman container.
+- [Ubuntu-Hardening](https://github.com/carlok/Ubuntu-Hardening) — forked Ubuntu 24.04 CIS hardening script reference.
 
 ## Math, computation, and formal experiments
 
