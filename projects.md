@@ -29,6 +29,29 @@ permalink: /projects/
   <a class="tab" href="/cv/">cv.sh</a>
 </div>
 
+## Visual and interactive systems
+
+- [consculpta](https://github.com/carlok/consculpta) — browser-only breeder of 3D sculptures: formulas over simplex noise, mutated as trees, raymarched in WebGL 2, with a genome editor, Shadertoy export and an optional bring-your-own-key AI co-breeder.
+- [agility-trainer](https://github.com/carlok/agility-trainer) — mobile-first bodyweight agility trainer.
+- [solids-hunter](https://github.com/carlok/solids-hunter) — first-person boolean-rule hunt: Babylon.js game with gamepad support and a shadow-pass watchdog.
+- [cross-tetris](https://github.com/carlok/cross-tetris) — shared-queue 4-well cross variant of Tetris: Rust/WASM engine with a rule-based AI, played in the browser.
+- [neon-bumper-cars](https://github.com/carlok/neon-bumper-cars) — multiplayer WebSocket party game for live events.
+- [staffarda](https://github.com/carlok/staffarda) — procedural Blender reconstruction of the ground floor of the Staffarda Abbey guesthouse, rebuilt from three photos: rib vault, four columns, weathered materials, a two-minute walkthrough, and a first-order thrust-line check of the vault.
+- [lifechess](https://github.com/carlok/lifechess) — chess-adjacent experiment mixing game structure and life-state modeling.
+- [deck-lovers](https://github.com/carlok/deck-lovers) — Markdown-to-HTML deck with live audience likes and projector sync.
+- [spriter](https://github.com/carlok/spriter) — browser-only tool that turns a raster image into a pixel-art sprite. No upload, no build, no dependencies.
+- [collective-canvas-3d](https://github.com/kiwifarmit/collective-canvas-3d) — collaborative 3D painting app where phones act as brushes.
+
+## Agents, automation, and review workflows
+
+- [alien-hunt](https://github.com/carlok/alien-hunt) — samples the defects a plain LLM review of a repository does not report, adapting The Alien Space of Science to code: candidates from the library's own sources, sinks and invariants, ranked by a model's coherence rating and by embedding distance from what the reviews already said, confirmed only when a reproducer imports the library, calls the function and exits 0 inside a sandbox.
+- [caciarabot](https://github.com/carlok/caciarabot) — Italian-first, self-hosted reactive Telegram group bot.
+- [roundstorm](https://github.com/carlok/roundstorm) — local-first app where persistent, heterogeneous AI researchers deliberate for a set number of rounds on a hard question; macOS, Linux and Windows.
+- [slop-audit](https://github.com/carlok/slop-audit) — local multi-tool harness for AI-slop and formulaic prose: writing linters, descriptive stats and separate local AI-authorship signals, with no hosted detectors.
+- [they-live-agent](https://github.com/carlok/they-live-agent) — local AR-style field-agent scanner experiment inspired by visual overlays.
+- [llm-source-security-review](https://github.com/carlok/llm-source-security-review) — Codex skill and playbook for defensive source-code security reviews.
+- [topshift-trend](https://github.com/carlok/topshift-trend) — Telegram bot that watches new entries in GitHub monthly trending repositories.
+
 ## Math, computation, and formal experiments
 
 - [prove2me-logs](https://github.com/carlok/prove2me-logs) — working log of Prove2Me formalization activity: per-mission entries with theorem uuids, Lean environments, and what remains open; a record of the work, not an archive of the proofs.
@@ -68,29 +91,6 @@ permalink: /projects/
 - [dash](https://github.com/carlok/dash) — serverless DMARC aggregate-report parser for Gmail: extracts, parses, enriches failing sources, emails a summary.
 - [cold-path-server-podman](https://github.com/carlok/cold-path-server-podman) — run the Cold Path game server (jalhund/cold-path-server) in a Podman container.
 - [Ubuntu-Hardening](https://github.com/carlok/Ubuntu-Hardening) — forked Ubuntu 24.04 CIS hardening script reference.
-
-## Agents, automation, and review workflows
-
-- [alien-hunt](https://github.com/carlok/alien-hunt) — samples the defects a plain LLM review of a repository does not report, adapting The Alien Space of Science to code: candidates from the library's own sources, sinks and invariants, ranked by a model's coherence rating and by embedding distance from what the reviews already said, confirmed only when a reproducer imports the library, calls the function and exits 0 inside a sandbox.
-- [caciarabot](https://github.com/carlok/caciarabot) — Italian-first, self-hosted reactive Telegram group bot.
-- [roundstorm](https://github.com/carlok/roundstorm) — local-first app where persistent, heterogeneous AI researchers deliberate for a set number of rounds on a hard question; macOS, Linux and Windows.
-- [slop-audit](https://github.com/carlok/slop-audit) — local multi-tool harness for AI-slop and formulaic prose: writing linters, descriptive stats and separate local AI-authorship signals, with no hosted detectors.
-- [they-live-agent](https://github.com/carlok/they-live-agent) — local AR-style field-agent scanner experiment inspired by visual overlays.
-- [llm-source-security-review](https://github.com/carlok/llm-source-security-review) — Codex skill and playbook for defensive source-code security reviews.
-- [topshift-trend](https://github.com/carlok/topshift-trend) — Telegram bot that watches new entries in GitHub monthly trending repositories.
-
-## Visual and interactive systems
-
-- [agility-trainer](https://github.com/carlok/agility-trainer) — mobile-first bodyweight agility trainer.
-- [solids-hunter](https://github.com/carlok/solids-hunter) — first-person boolean-rule hunt: Babylon.js game with gamepad support and a shadow-pass watchdog.
-- [cross-tetris](https://github.com/carlok/cross-tetris) — shared-queue 4-well cross variant of Tetris: Rust/WASM engine with a rule-based AI, played in the browser.
-- [neon-bumper-cars](https://github.com/carlok/neon-bumper-cars) — multiplayer WebSocket party game for live events.
-- [staffarda](https://github.com/carlok/staffarda) — procedural Blender reconstruction of the ground floor of the Staffarda Abbey guesthouse, rebuilt from three photos: rib vault, four columns, weathered materials, a two-minute walkthrough, and a first-order thrust-line check of the vault.
-- [consculpta](https://github.com/carlok/consculpta) — browser-only breeder of 3D sculptures: formulas over simplex noise, mutated as trees, raymarched in WebGL 2, with a genome editor, Shadertoy export and an optional bring-your-own-key AI co-breeder.
-- [lifechess](https://github.com/carlok/lifechess) — chess-adjacent experiment mixing game structure and life-state modeling.
-- [deck-lovers](https://github.com/carlok/deck-lovers) — Markdown-to-HTML deck with live audience likes and projector sync.
-- [spriter](https://github.com/carlok/spriter) — browser-only tool that turns a raster image into a pixel-art sprite. No upload, no build, no dependencies.
-- [collective-canvas-3d](https://github.com/kiwifarmit/collective-canvas-3d) — collaborative 3D painting app where phones act as brushes.
 
 ## Writing, philosophy, and structured notes
 
