@@ -1,0 +1,11 @@
+---
+title: "diaz-modulus-lean: Roy's strong six exponentials theorem now holds with no hypothesis — note v1.39"
+date: 2026-10-30
+tags: [lean4, math, research]
+---
+
+The last hypothesis in [diaz-modulus-lean](https://github.com/carlok/diaz-modulus-lean) is gone. Since [notes v1.36–v1.38](/blog/2026/10/29/diaz-modulus-lean-notes-1-36-1-38-multiplicity-estimate/) Roy's theorem was machine-checked from one explicit hypothesis, (ME) — the case `G⁻ = {e}`, `G⁺ = G` of the multiplicity estimate of DALAG Th. 8.1, for `G = 𝔾ₐ^{A₀} × 𝔾ₘ^{A₁}`, written in coordinates, with only its Hilbert side proved. Thirty-two nodes on 30 October prove its multiplicity side and assemble it as `DiazModulus.multiplicityEstimateElem`, so `Diaz.strongSixExponentials` holds unconditionally and `Diaz/RoyUnconditional.lean` restates each of the 25 results that had taken Roy's theorem as a hypothesis without it ([3e513e4](https://github.com/carlok/diaz-modulus-lean/commit/3e513e4), [note-v1.39](https://github.com/carlok/diaz-modulus-lean/releases/tag/note-v1.39)). The mirror stands at 596 of 596 results, the appendix at 226 identifiers, and the companion note at 44 pages.
+
+The proof is DALAG §8.4 at finite level, and it is elementary throughout: zero sets and heights on the torus, characters of its subgroups, its invariant derivations, the tangent duals of Lemmas 8.14–8.16 with Wüstholz's argument, and the descent of §8.4.1 to an obstruction subgroup — while for `G⁻ = {e}` the estimate is a case of Philippon 1986, Th. 2.1. What is *not* proved is stated in the release rather than implied: DALAG Th. 8.1 in general, only the case Roy's theorem uses, and the note's own framing is that these are classical results and this a routine formalisation of their known proofs.
+
+Downstream, that changes what the library says: every result machine-checked with Roy's theorem as a hypothesis now holds formally without it, among them all of §2 of Diaz 2007 and the case of Waldschmidt's question in Section 2, and the passages that called (ME) or Roy's theorem unproved now say what is proved. The [prove2me-logs](https://github.com/carlok/prove2me-logs) board carries the same round from the research side ([a9118de](https://github.com/carlok/prove2me-logs/commit/a9118de)).

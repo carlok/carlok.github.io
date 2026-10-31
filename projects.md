@@ -71,6 +71,7 @@ permalink: /projects/
 
 ## Agents, automation, and review workflows
 
+- [alien-hunt](https://github.com/carlok/alien-hunt) — samples the defects a plain LLM review of a repository does not report, adapting The Alien Space of Science to code: candidates from the library's own sources, sinks and invariants, ranked by a model's coherence rating and by embedding distance from what the reviews already said, confirmed only when a reproducer imports the library, calls the function and exits 0 inside a sandbox.
 - [caciarabot](https://github.com/carlok/caciarabot) — Italian-first, self-hosted reactive Telegram group bot.
 - [roundstorm](https://github.com/carlok/roundstorm) — local-first app where persistent, heterogeneous AI researchers deliberate for a set number of rounds on a hard question; macOS, Linux and Windows.
 - [slop-audit](https://github.com/carlok/slop-audit) — local multi-tool harness for AI-slop and formulaic prose: writing linters, descriptive stats and separate local AI-authorship signals, with no hosted detectors.
