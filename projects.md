@@ -54,6 +54,7 @@ permalink: /projects/
 
 ## Math, computation, and formal experiments
 
+- [hidden-intersections](https://github.com/carlok/hidden-intersections) — Quilez's hidden intersections worked out as a complex kei: the theory paper, an exhaustive input × mirror classification (7 real classes, 35 cells, 88 leaves, 305 checks), 16 worked examples, storyboards, and a dependency-free explorer of the complex tangency locus.
 - [prove2me-logs](https://github.com/carlok/prove2me-logs) — working log of Prove2Me formalization activity: per-mission entries with theorem uuids, Lean environments, and what remains open; a record of the work, not an archive of the proofs.
 - [diaz-modulus-lean](https://github.com/carlok/diaz-modulus-lean) — Lean 4 formalization of a negative result on Diaz's modulus conjecture: a candidate's conjugate is a rational function of it, so no algebraic-hull matrix statement can separate it from an ordinary complex number.
 - [LeanFrontier](https://github.com/carlok/LeanFrontier) — open Lean 4 library of machine-generated, kernel-verified mathematics on Mathlib.

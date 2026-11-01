@@ -1,0 +1,11 @@
+---
+title: "hidden-intersections is public: a line that misses a circle still meets it, and the classification that follows"
+date: 2026-10-31
+tags: [math, research]
+---
+
+[hidden-intersections](https://github.com/carlok/hidden-intersections) went public on 31 October, a reply in code to Inigo Quilez's *Hidden intersections* short: a line that misses a circle still meets it at two complex conjugate points, and sweeping a family of parallel lines glues the real curve and its phantom branches into one locus at the tangency points. Circles and lines become points of P³(C) under a quadratic form Q, so inverting one circle in another is a linear reflection; mirroring makes the circles a complex kei and the mirrors generate PO(4,C), a circle meets its mirror image exactly where it meets the mirror, and one number sorts everything — κ = ⟨C,L⟩²/(Q(C)Q(L)), which is 1 at tangency, cos²θ for crossing circles, and can be negative ([2b17299](https://github.com/carlok/hidden-intersections/commit/2b17299)).
+
+The second commit is the exhaustive part: every combination of an *input* (point, line, circle) and the *mirror* operator, with each parameter real, purely imaginary or complex, and each meeting type — secant, tangent, disjoint, nested, concentric, orthogonal, through a point, parallel, isotropic — collapses 2025 raw parameter pairs to 7 real classes and 35 cells (points cannot be mirrors), which then split into 88 leaves by the type of common points. Every exclusion is proved and every leaf has an exact example; `verify/classification_verify.py` runs 305 checks in about two and a half minutes and CI fails if any log reports a failure ([7209af3](https://github.com/carlok/hidden-intersections/commit/7209af3), [classification PDF](https://carlok.github.io/hidden-intersections/pdf/classification.pdf)).
+
+Alongside the two papers are 16 worked examples, storyboards with their narration and render scripts, a text transcript of Quilez's short in place of his video, and a dependency-free explorer at [carlok.github.io/hidden-intersections](https://carlok.github.io/hidden-intersections/) where a curve and a line direction give the complex tangency locus to drag. Code and app are MIT, text, LaTeX and PDFs CC BY 4.0, with the original short credited to Quilez throughout.
