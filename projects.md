@@ -31,6 +31,7 @@ permalink: /projects/
 
 ## Visual and interactive systems
 
+- [guess-the-move](https://github.com/carlok/guess-the-move) — chess trainer that reveals what Stockfish, a real player of known rating and Maia would play, and how far your guess is from each; 2,000 Lichess-sourced positions, a local level estimate, retries, daily challenges, no server.
 - [consculpta](https://github.com/carlok/consculpta) — browser-only breeder of 3D sculptures: formulas over simplex noise, mutated as trees, raymarched in WebGL 2, with a genome editor, Shadertoy export and an optional bring-your-own-key AI co-breeder.
 - [red-ink](https://github.com/carlok/red-ink) — *Sublevel Three*, a browser fighting game in one HTML file: a warehouse, six named bouts, a story frame about a door that is not on the floor plan, keyboard/gamepad/touch, live tuning measured against seeded bot win rates, and a headless regression suite that also plays it offline from `file://`.
 - [deck-lovers](https://github.com/carlok/deck-lovers) — Markdown-to-HTML deck with live audience likes and projector sync.
