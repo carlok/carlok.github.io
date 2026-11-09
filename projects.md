@@ -83,6 +83,7 @@ permalink: /projects/
 
 ## Infrastructure, security, and operational tools
 
+- [ots-explain](https://github.com/carlok/ots-explain) — check, understand and create OpenTimestamps proofs: every hop from a file to a Bitcoin block, as one static page and one stdlib-only Python script, two independent implementations of one written spec that must print byte-identical reports.
 - [fleetlens](https://github.com/carlok/fleetlens) — agentless, read-only health reports for a small Debian/Ubuntu VM fleet: Ansible over SSH, Python reports, optional email.
 - [matrix-podman-stack](https://github.com/carlok/matrix-podman-stack) — private Matrix homeserver on rootless Podman: Synapse and Postgres, Element Web, an optional Telegram bridge, optional Prometheus/Grafana, NATS and Valkey as a bot bus, all bind-mounted under one `DATA_DIR` and publishing on `127.0.0.1` only, with the bot accounts driven by a `bots.yaml` file.
 - [pacenotch](https://github.com/carlok/pacenotch) — Claude usage limits in the terminal, a tray icon and a window: a vertical notch on each bar marks where an even pace would leave you, so the fill says ahead-of-pace or room-to-spare at a glance.
