@@ -1,5 +1,5 @@
 ---
-title: "topshift-trend: under the new Python 3.13 builder the bot could not start at all — PTB 20.8 leaves a slot off `Updater.__slots__`"
+title: "topshift-trend: under the new Python 3.13 builder the bot could not start at all, and the fault is a slot python-telegram-bot forgot to declare"
 date: 2026-11-08
 tags: [bot, podman]
 ---
