@@ -56,6 +56,7 @@ permalink: /projects/
 
 ## Math, computation, and formal experiments
 
+- [blindhex](https://github.com/carlok/blindhex) — blind, pre-registered analysis of GNSS interference seen by aircraft (GPSJAM, 2022–2026): hexagon ids replaced by random opaque ids, the report hashed and frozen before the key is opened, reproducible end to end with Podman.
 - [aristowrap](https://github.com/carlok/aristowrap) — Docker-first CLI around Harmonic Aristotle, Lean 4, and Mathlib.
 - [cdclkit](https://github.com/carlok/cdclkit) — readable, self-checking CDCL SAT solver, preprocessor, and encoding library: every answer comes with a certificate (models re-checked, UNSAT backed by a DRAT proof an independent checker replays).
 - [dratify](https://github.com/carlok/dratify) — in-process DRAT/DRUP unsatisfiability proof checker for Python and Rust: zero dependencies, with an optional Rust accelerator.
