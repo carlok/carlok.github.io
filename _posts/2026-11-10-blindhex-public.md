@@ -4,7 +4,7 @@ date: 2026-11-10
 tags: [research, github]
 ---
 
-[blindhex](https://github.com/carlok/blindhex) went public on 10 November, MIT-licensed ([78dec5b](https://github.com/carlok/blindhex/commit/78dec5b)): 1,727 daily [GPSJAM](https://gpsjam.org) maps from February 2022 to November 2026, 190,102 H3 cells of roughly 1,800 km² each, 62 million valid hexagon-days — and an answer. GPS interference reported by aircraft is more than three times as common as in 2022, and since late 2024 it has been appearing east of the Urals, where there was none before.
+[blindhex](https://github.com/carlok/blindhex) went public on 10 November, MIT-licensed ([78dec5d](https://github.com/carlok/blindhex/commit/78dec5d)): 1,727 daily [GPSJAM](https://gpsjam.org) maps from February 2022 to November 2026, 190,102 H3 cells of roughly 1,800 km² each, 62 million valid hexagon-days — and an answer. GPS interference reported by aircraft is more than three times as common as in 2022, and since late 2024 it has been appearing east of the Urals, where there was none before.
 
 The point of the repository is how that answer was reached. Stage A replaces every H3 cell id with a random opaque id and keeps only an abstract neighbour graph, the key that maps ids back to places going to `data/sealed/`; stage B runs in a container with `--network=none`, a read-only mount of the anonymised data and no `h3`, `shapely` or `geopandas` installed, after a self-test that checks those isolation facts on every run; stage C re-hashes the frozen blind report and refuses to continue if the hash changed, and only then names places and draws the map ([README](https://github.com/carlok/blindhex), [frozen/BLIND_REPORT.md](https://github.com/carlok/blindhex/blob/master/frozen/BLIND_REPORT.md)).
 
