@@ -31,14 +31,14 @@ permalink: /projects/
 
 ## Math, computation, and formal experiments
 
+- [diaz-modulus-lean](https://github.com/carlok/diaz-modulus-lean) — Lean 4 formalization of a negative result on Diaz's modulus conjecture: a candidate's conjugate is a rational function of it, so no algebraic-hull matrix statement can separate it from an ordinary complex number.
+- [prove2me-logs](https://github.com/carlok/prove2me-logs) — working log of Prove2Me formalization activity: per-mission entries with theorem uuids, Lean environments, and what remains open; a record of the work, not an archive of the proofs.
 - [blindhex](https://github.com/carlok/blindhex) — blind, pre-registered analysis of GNSS interference seen by aircraft (GPSJAM, 2022–2026): hexagon ids replaced by random opaque ids, the report hashed and frozen before the key is opened, reproducible end to end with Podman.
 - [aristowrap](https://github.com/carlok/aristowrap) — Docker-first CLI around Harmonic Aristotle, Lean 4, and Mathlib.
 - [cdclkit](https://github.com/carlok/cdclkit) — readable, self-checking CDCL SAT solver, preprocessor, and encoding library: every answer comes with a certificate (models re-checked, UNSAT backed by a DRAT proof an independent checker replays).
 - [dratify](https://github.com/carlok/dratify) — in-process DRAT/DRUP unsatisfiability proof checker for Python and Rust: zero dependencies, with an optional Rust accelerator.
-- [diaz-modulus-lean](https://github.com/carlok/diaz-modulus-lean) — Lean 4 formalization of a negative result on Diaz's modulus conjecture: a candidate's conjugate is a rational function of it, so no algebraic-hull matrix statement can separate it from an ordinary complex number.
 - [parsimagma](https://github.com/carlok/parsimagma) — magma signature and coverage engine over the Equational Theories Project law set.
 - [LeanFrontier](https://github.com/carlok/LeanFrontier) — open Lean 4 library of machine-generated, kernel-verified mathematics on Mathlib.
-- [prove2me-logs](https://github.com/carlok/prove2me-logs) — working log of Prove2Me formalization activity: per-mission entries with theorem uuids, Lean environments, and what remains open; a record of the work, not an archive of the proofs.
 - [hidden-intersections](https://github.com/carlok/hidden-intersections) — Quilez's hidden intersections worked out as a complex kei: the theory paper, an exhaustive input × mirror classification (7 real classes, 35 cells, 88 leaves, 305 checks), 16 worked examples, storyboards, and a dependency-free explorer of the complex tangency locus.
 - [lspace-det-sigma](https://github.com/carlok/lspace-det-sigma) — an inequality between determinant and signature for L-space knots: the note, its computations, and a Lean 4 proof of the lattice lemma.
 - [quadratula](https://github.com/carlok/quadratula) — how much of Le Floch's implication semilattice of Schröder's 990 quasigroup laws small quasigroups already witness: exhaustive enumeration to order 6, exact results to order 9, a provably optimal 17-quasigroup cover, and a generated report with independent checks.
