@@ -59,6 +59,7 @@ permalink: /projects/
 
 ## Visual and interactive systems
 
+- [sunslide](https://github.com/carlok/sunslide) — 3D arcade puzzle on a tiny planet: Pac-Man-style bubble chasing over a 15-puzzle of sliding meadow islands, three.js + WebGL, day/night, bats, sinkholes and a planet that greens as you clear it, playable in the browser.
 - [deck-lovers](https://github.com/carlok/deck-lovers) — Markdown-to-HTML deck with live audience likes and projector sync.
 - [guess-the-move](https://github.com/carlok/guess-the-move) — chess trainer that reveals what Stockfish, a real player of known rating and Maia would play, and how far your guess is from each; 2,000 Lichess-sourced positions, a local level estimate, retries, daily challenges, no server.
 - [consculpta](https://github.com/carlok/consculpta) — browser-only breeder of 3D sculptures: formulas over simplex noise, mutated as trees, raymarched in WebGL 2, with a genome editor, Shadertoy export and an optional bring-your-own-key AI co-breeder.
