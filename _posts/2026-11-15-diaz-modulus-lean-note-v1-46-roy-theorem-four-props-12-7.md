@@ -1,0 +1,11 @@
+---
+title: "diaz-modulus-lean: Roy's Theorem 4 over ℚ and DALAG 11.19 as printed — note v1.46, and four more printed corrections"
+date: 2026-11-15
+tags: [lean4, math, research]
+---
+
+[Note v1.46](https://github.com/carlok/diaz-modulus-lean/releases/tag/note-v1.46) of [diaz-modulus-lean](https://github.com/carlok/diaz-modulus-lean) is 52 pages and takes the library from 684 results to 690, all on Lean's three standard axioms, with 263 headline theorems audited and the blueprint at 477 ([66e8f76](https://github.com/carlok/diaz-modulus-lean/commit/66e8f76)). Six nodes over two rounds on 15 November: Roy's Theorem 4 over ℚ in its minimal-ratio form, and DALAG Prop. 11.19 for (ℚ, ℚ + ℒ) as printed — for a subspace T ≠ ℂᵈ spanned by rational vectors with n′/d′ minimal, the quotient (U ∩ (ℚ + ℒ)ᵈ)/(U ∩ T ∩ (ℚ + ℒ)ᵈ) is finite-dimensional over ℚ, of dimension ℓ′ with ℓ′/(d′ + ℓ′) ≤ n′/d′ ≤ n/d.
+
+The other three are chapter 12: DALAG Prop. 12.7, the bound n(n + 1)/2 for V ∩ Eᵈ under Property (A B; C 0); Prop. 12.10, that every polynomial is the determinant of a matrix of affine forms; and Prop. 12.13, (iv) ⇒ (iii). As on 14 November, the printed statements did not all survive being formalised, and four more went into [ERRATA.md](https://github.com/carlok/diaz-modulus-lean/blob/master/ERRATA.md) under `rem:printed-corrections`: Roy's Remark (i) on p. 37 extends Theorem 4 to a subfield F of Q̄ while quoting his Theorem 1 over Q̄ only, a small gap that a reduction to the Q̄ case fills (B10); the Remark of DALAG §12.1.3 on p. 424 transports Property (A B; C 0) along a k-linear isomorphism, which does not carry it (B11); plus an index slip on p. 423 (C12) and a block count in the proof of Lemma 12.11 (C13).
+
+No novelty is claimed for any of it — these are classical results formalised as printed, which is what the [review of v1.43 to v1.45](/blog/2026/11/14/diaz-modulus-lean-notes-1-43-to-1-45-errata/) said of the round before. The [prove2me-logs](https://github.com/carlok/prove2me-logs) board carries the research side: six nodes Proved on 15 November, milestones 210 to 213, mirrored in the repository at the same commit ([8d0104f](https://github.com/carlok/prove2me-logs/commit/8d0104f)).
