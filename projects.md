@@ -32,8 +32,8 @@ permalink: /projects/
 ## Visual and interactive systems
 
 - [sunslide](https://github.com/carlok/sunslide) — 3D arcade puzzle on a tiny planet: Pac-Man-style bubble chasing over a 15-puzzle of sliding meadow islands, three.js + WebGL, day/night, bats, sinkholes and a planet that greens as you clear it, playable in the browser.
-- [deck-lovers](https://github.com/carlok/deck-lovers) — Markdown-to-HTML deck with live audience likes and projector sync.
 - [guess-the-move](https://github.com/carlok/guess-the-move) — chess trainer that reveals what Stockfish, a real player of known rating and Maia would play, and how far your guess is from each; 2,000 Lichess-sourced positions, a local level estimate, retries, daily challenges, no server.
+- [deck-lovers](https://github.com/carlok/deck-lovers) — Markdown-to-HTML deck with live audience likes and projector sync.
 - [consculpta](https://github.com/carlok/consculpta) — browser-only breeder of 3D sculptures: formulas over simplex noise, mutated as trees, raymarched in WebGL 2, with a genome editor, Shadertoy export and an optional bring-your-own-key AI co-breeder.
 - [red-ink](https://github.com/carlok/red-ink) — *Sublevel Three*, a browser fighting game in one HTML file: a warehouse, six named bouts, a story frame about a door that is not on the floor plan, keyboard/gamepad/touch, live tuning measured against seeded bot win rates, and a headless regression suite that also plays it offline from `file://`.
 - [agility-trainer](https://github.com/carlok/agility-trainer) — mobile-first bodyweight agility trainer.
@@ -44,6 +44,16 @@ permalink: /projects/
 - [lifechess](https://github.com/carlok/lifechess) — chess-adjacent experiment mixing game structure and life-state modeling.
 - [spriter](https://github.com/carlok/spriter) — browser-only tool that turns a raster image into a pixel-art sprite. No upload, no build, no dependencies.
 - [collective-canvas-3d](https://github.com/kiwifarmit/collective-canvas-3d) — collaborative 3D painting app where phones act as brushes.
+
+## Agents, automation, and review workflows
+
+- [alien-hunt](https://github.com/carlok/alien-hunt) — samples the defects a plain LLM review of a repository does not report, adapting The Alien Space of Science to code: candidates from the library's own sources, sinks and invariants, ranked by a model's coherence rating and by embedding distance from what the reviews already said, confirmed only when a reproducer imports the library, calls the function and exits 0 inside a sandbox.
+- [roundstorm](https://github.com/carlok/roundstorm) — local-first app where persistent, heterogeneous AI researchers deliberate for a set number of rounds on a hard question; macOS, Linux and Windows.
+- [caciarabot](https://github.com/carlok/caciarabot) — Italian-first, self-hosted reactive Telegram group bot.
+- [topshift-trend](https://github.com/carlok/topshift-trend) — Telegram bot that watches new entries in GitHub monthly trending repositories.
+- [llm-source-security-review](https://github.com/carlok/llm-source-security-review) — Codex skill and playbook for defensive source-code security reviews.
+- [slop-audit](https://github.com/carlok/slop-audit) — local multi-tool harness for AI-slop and formulaic prose: writing linters, descriptive stats and separate local AI-authorship signals, with no hosted detectors.
+- [they-live-agent](https://github.com/carlok/they-live-agent) — local AR-style field-agent scanner experiment inspired by visual overlays.
 
 ## Math, computation, and formal experiments
 
@@ -87,16 +97,6 @@ permalink: /projects/
 - [dash](https://github.com/carlok/dash) — serverless DMARC aggregate-report parser for Gmail: extracts, parses, enriches failing sources, emails a summary.
 - [cold-path-server-podman](https://github.com/carlok/cold-path-server-podman) — run the Cold Path game server (jalhund/cold-path-server) in a Podman container.
 - [Ubuntu-Hardening](https://github.com/carlok/Ubuntu-Hardening) — forked Ubuntu 24.04 CIS hardening script reference.
-
-## Agents, automation, and review workflows
-
-- [roundstorm](https://github.com/carlok/roundstorm) — local-first app where persistent, heterogeneous AI researchers deliberate for a set number of rounds on a hard question; macOS, Linux and Windows.
-- [topshift-trend](https://github.com/carlok/topshift-trend) — Telegram bot that watches new entries in GitHub monthly trending repositories.
-- [llm-source-security-review](https://github.com/carlok/llm-source-security-review) — Codex skill and playbook for defensive source-code security reviews.
-- [caciarabot](https://github.com/carlok/caciarabot) — Italian-first, self-hosted reactive Telegram group bot.
-- [alien-hunt](https://github.com/carlok/alien-hunt) — samples the defects a plain LLM review of a repository does not report, adapting The Alien Space of Science to code: candidates from the library's own sources, sinks and invariants, ranked by a model's coherence rating and by embedding distance from what the reviews already said, confirmed only when a reproducer imports the library, calls the function and exits 0 inside a sandbox.
-- [slop-audit](https://github.com/carlok/slop-audit) — local multi-tool harness for AI-slop and formulaic prose: writing linters, descriptive stats and separate local AI-authorship signals, with no hosted detectors.
-- [they-live-agent](https://github.com/carlok/they-live-agent) — local AR-style field-agent scanner experiment inspired by visual overlays.
 
 ## Writing, philosophy, and structured notes
 
