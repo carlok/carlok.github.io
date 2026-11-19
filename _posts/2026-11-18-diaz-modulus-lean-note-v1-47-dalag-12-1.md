@@ -1,0 +1,11 @@
+---
+title: "diaz-modulus-lean: DALAG §12.1 finished, Fischler 2001 Section 6, and five printed slips — note v1.47"
+date: 2026-11-18
+tags: [lean4, math, research]
+---
+
+[Note v1.47](https://github.com/carlok/diaz-modulus-lean/releases/tag/note-v1.47) of [diaz-modulus-lean](https://github.com/carlok/diaz-modulus-lean) is 54 pages and takes the library to **718 results**, all on Lean's three standard axioms, with 291 headline theorems audited and the blueprint at 505 ([41cde4b](https://github.com/carlok/diaz-modulus-lean/commit/41cde4b)). It finishes DALAG §12.1: Prop. 12.13 as an equivalence of its four conditions — with (ii) ⇒ (iv) standing in place of the printed (i) ⇒ (iv) — Cor. 12.14, Prop. 12.6 without the hypothesis n < d that its proof does not use, Prop. 12.2 (D. Roy) for any field k by running the inductive proof of pp. 420–422 for every E in which k-free elements with 1 are algebraically independent, the Remark of p. 424 without E₀ ∩ k = {0}, and §12.1.6. Waldschmidt's *Further variations* Cor. 1.3 and Fischler 2001 Lemma 6.1, Th. 1.1, Th. 6.2 (2), Th. 6.4 (1)–(2) and Cor. 6.3 (1) follow, with Th. 1.2 under the weaker hypothesis of the note on p. 183 — routine formalisations of classical results, no novelty claimed.
+
+Five printed statements were corrected on the way, all recorded in [`ERRATA.md`](https://github.com/carlok/diaz-modulus-lean/blob/master/ERRATA.md) and in the note's `rem:printed-corrections`: the remark after Th. 1.2 of *Further variations*, p. 3, is false as printed and holds with rows and columns free (A5); in Fischler's proof of Prop. 5.7, p. 183, "dimension at least 2, therefore it intersects E" does not follow and the conclusion stands by scaling (B12); and three DALAG slips — a rank on p. 422 (C14), a cross-reference on p. 431 (C15) and block sizes on p. 419 (C16).
+
+The README is now short with the documentation split into `docs/`, a pure move with no change in content, and `docs/method.md` gained a "Tools" section on the Lean language-server tool the proof agents used in this release ([9d73eef](https://github.com/carlok/diaz-modulus-lean/commit/9d73eef)). The same day's entry in [prove2me-logs](https://github.com/carlok/prove2me-logs) records DALAG §12.1 completed and Fischler 2001 Section 6 ([2fbf4b0](https://github.com/carlok/prove2me-logs/commit/2fbf4b0)).

@@ -100,4 +100,5 @@ permalink: /projects/
 
 ## Writing, philosophy, and structured notes
 
+- [focuswriter-macos](https://github.com/carlok/focuswriter-macos) — unofficial, universal (Apple Silicon + Intel) macOS DMGs of FocusWriter, built from unmodified upstream release tags by a packaging-only repository: ad-hoc signed, checksummed, with a build-provenance attestation and a weekly upstream-tag watch.
 - [WIP articles and book PDFs](/book/pdfs/) — generated PDFs for the current book and standalone articles.
