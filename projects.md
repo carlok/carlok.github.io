@@ -62,6 +62,7 @@ permalink: /projects/
 
 ## Math, computation, and formal experiments
 
+- [packed-table-footprint](https://github.com/carlok/packed-table-footprint) — axiom-footprint measurements for a packed finite-operation-table encoding of ETP countermodels: a table written as one `Nat` literal closes over no axioms through the Stage 2 judge, where `finOpTable` closes over three.
 - [diaz-modulus-lean](https://github.com/carlok/diaz-modulus-lean) — Lean 4 formalization of a negative result on Diaz's modulus conjecture: a candidate's conjugate is a rational function of it, so no algebraic-hull matrix statement can separate it from an ordinary complex number.
 - [prove2me-logs](https://github.com/carlok/prove2me-logs) — working log of Prove2Me formalization activity: per-mission entries with theorem uuids, Lean environments, and what remains open; a record of the work, not an archive of the proofs.
 - [euclean](https://github.com/carlok/euclean) — can a machine recover mathematical structure from an anonymized formal theory and a proof checker alone?
