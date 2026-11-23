@@ -31,6 +31,8 @@ permalink: /projects/
 
 ## Math, computation, and formal experiments
 
+- [six-exponentials-lean](https://github.com/carlok/six-exponentials-lean) — the six exponentials theorem of Lang and Ramachandra in Lean 4, extracted from diaz-modulus-lean as a self-contained submission and registered with Palomar as PALOMAR-2026-11-22-000020.
+- [duet](https://github.com/carlok/duet) — open-ended search over small theories in two binary operations for synergy: laws a theory implies but no single law of it does, every claim checked by finite-model search and theorem provers, with a funnel that separates rediscovery from novelty.
 - [diaz-modulus-lean](https://github.com/carlok/diaz-modulus-lean) — Lean 4 formalization of a negative result on Diaz's modulus conjecture: a candidate's conjugate is a rational function of it, so no algebraic-hull matrix statement can separate it from an ordinary complex number.
 - [prove2me-logs](https://github.com/carlok/prove2me-logs) — working log of Prove2Me formalization activity: per-mission entries with theorem uuids, Lean environments, and what remains open; a record of the work, not an archive of the proofs.
 - [packed-table-footprint](https://github.com/carlok/packed-table-footprint) — axiom-footprint measurements for a packed finite-operation-table encoding of ETP countermodels: a table written as one `Nat` literal closes over no axioms through the Stage 2 judge, where `finOpTable` closes over three.

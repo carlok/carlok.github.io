@@ -1,0 +1,13 @@
+---
+title: "six-exponentials-lean: one theorem, its proof, and a Palomar registration at PALOMAR-2026-11-22-000020"
+date: 2026-11-22
+tags: [lean4, math]
+---
+
+[six-exponentials-lean](https://github.com/carlok/six-exponentials-lean) is a new public repository holding one theorem and the proof of it, extracted from [diaz-modulus-lean](https://github.com/carlok/diaz-modulus-lean) so that it can be checked on its own — the eleven modules of `SixExponentials/Basic/` are the import closure at commit `edb9c5b`, copied verbatim apart from the module system's `module`, `public import` and `public section` and renamed namespaces, and each file's header names where it came from. The reason for the extract is a rule rather than taste: Palomar now requires every `.lean` file of a submitted repository to use Lean's module system, and the library does not ([b42d65b](https://github.com/carlok/six-exponentials-lean/commit/b42d65b)). The statement: if x₁, x₂ are linearly independent over ℚ and y₁, y₂, y₃ are too, at least one of the six numbers `exp (xᵢ yⱼ)` is transcendental — Lang 1966 and Ramachandra 1968, with the four exponentials conjecture as the open case of the same shape.
+
+It is registered as [PALOMAR-2026-11-22-000020](https://palomar-registry.org/entry?id=PALOMAR-2026-11-22-000020&version=1), version 1, mechanically verified on 22 November at 16:34 UTC against the fixed source version, with a durable verification report and the Actions run that produced it. The proof is Schneider's method in Lang and Ramachandra's form relative to a number field: Siegel's lemma gives an exponential polynomial vanishing on a box, a Cauchy estimate played against Liouville extends the vanishing box by box, Dedekind's independence of characters forces zero coefficients, and the library proves the general `d + l < dl` case of which this is `d = 2, l = 3`.
+
+The repository separates what is claimed from what is proved: `Challenge.lean` states the theorem with `sorry` and imports Mathlib only, `Solution.lean` proves it, `comparator.json` names the declaration Comparator compares and the permitted axioms, and `formalization.yaml` records provenance. `scripts/check_axioms.py` allows `propext`, `Classical.choice` and `Quot.sound` and nothing else, and `verify-comparator.sh` builds the pinned Comparator, lean4export, NanoDa and Landrun to check that `Solution` proves exactly the statement of `Challenge` — Linux only, since Landrun's sandbox is Landlock, so CI runs it on Ubuntu.
+
+The canonical home of the proof stays diaz-modulus-lean, where it has been `Diaz.six_exponentials` since 13 September 2026, and corrections are made there first.
