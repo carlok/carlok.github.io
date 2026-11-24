@@ -31,14 +31,14 @@ permalink: /projects/
 
 ## Math, computation, and formal experiments
 
-- [ragusa](https://github.com/carlok/ragusa) — conjecturing engine that reports its own floor: over numeric and boolean tables it enumerates bounds and implications, then prints each filter's partition (representative, alias, discarded), per-object attribution, a chance baseline and a pinning block, with a Rust engine and a calibration census of what TxGraffiti's and AutoGraphForge's own filters discard.
-- [strong-six-exponentials-palomar](https://github.com/carlok/strong-six-exponentials-palomar) — Roy's strong six exponentials theorem and his rank bound for matrices of logarithms in Lean 4, a module-system extract of diaz-modulus-lean prepared for the Palomar registry.
-- [five-exponentials-palomar](https://github.com/carlok/five-exponentials-palomar) — the five exponentials theorem of Waldschmidt 1988 in Lean 4, a module-system extract of diaz-modulus-lean prepared for the Palomar registry.
-- [four-exponentials-palomar](https://github.com/carlok/four-exponentials-palomar) — the four exponentials theorem in transcendence degree one and Schneider's eighth problem in Lean 4, a module-system extract of diaz-modulus-lean prepared for the Palomar registry.
-- [baker-linear-forms-palomar](https://github.com/carlok/baker-linear-forms-palomar) — Baker's theorem on linear forms in logarithms and the Schneider–Lang criterion for ℂ^{d₀} × (ℂ^×)^{d₁} with d₀ ≤ 1, in Lean 4, a module-system extract of diaz-modulus-lean prepared for the Palomar registry.
-- [transcendence-criterion-palomar](https://github.com/carlok/transcendence-criterion-palomar) — Gel'fond's transcendence criterion in Waldschmidt's 1971 form, in Lean 4, a module-system extract of diaz-modulus-lean prepared for the Palomar registry.
-- [LeanFrontier](https://github.com/carlok/LeanFrontier) — open Lean 4 library of machine-generated, kernel-verified mathematics on Mathlib.
 - [duet](https://github.com/carlok/duet) — open-ended search over small theories in two binary operations for synergy: laws a theory implies but no single law of it does, every claim checked by finite-model search and theorem provers, with a funnel that separates rediscovery from novelty.
+- [LeanFrontier](https://github.com/carlok/LeanFrontier) — open Lean 4 library of machine-generated, kernel-verified mathematics on Mathlib.
+- [transcendence-criterion-palomar](https://github.com/carlok/transcendence-criterion-palomar) — Gel'fond's transcendence criterion in Waldschmidt's 1971 form, in Lean 4, a module-system extract of diaz-modulus-lean prepared for the Palomar registry.
+- [strong-six-exponentials-palomar](https://github.com/carlok/strong-six-exponentials-palomar) — Roy's strong six exponentials theorem and his rank bound for matrices of logarithms in Lean 4, a module-system extract of diaz-modulus-lean prepared for the Palomar registry.
+- [four-exponentials-palomar](https://github.com/carlok/four-exponentials-palomar) — the four exponentials theorem in transcendence degree one and Schneider's eighth problem in Lean 4, a module-system extract of diaz-modulus-lean prepared for the Palomar registry.
+- [five-exponentials-palomar](https://github.com/carlok/five-exponentials-palomar) — the five exponentials theorem of Waldschmidt 1988 in Lean 4, a module-system extract of diaz-modulus-lean prepared for the Palomar registry.
+- [baker-linear-forms-palomar](https://github.com/carlok/baker-linear-forms-palomar) — Baker's theorem on linear forms in logarithms and the Schneider–Lang criterion for ℂ^{d₀} × (ℂ^×)^{d₁} with d₀ ≤ 1, in Lean 4, a module-system extract of diaz-modulus-lean prepared for the Palomar registry.
+- [ragusa](https://github.com/carlok/ragusa) — conjecturing engine that reports its own floor: over numeric and boolean tables it enumerates bounds and implications, then prints each filter's partition (representative, alias, discarded), per-object attribution, a chance baseline and a pinning block, with a Rust engine and a calibration census of what TxGraffiti's and AutoGraphForge's own filters discard.
 - [aristowrap](https://github.com/carlok/aristowrap) — Docker-first CLI around Harmonic Aristotle, Lean 4, and Mathlib.
 - [diaz-modulus-lean](https://github.com/carlok/diaz-modulus-lean) — Lean 4 formalization of a negative result on Diaz's modulus conjecture: a candidate's conjugate is a rational function of it, so no algebraic-hull matrix statement can separate it from an ordinary complex number.
 - [six-exponentials-lean](https://github.com/carlok/six-exponentials-lean) — the six exponentials theorem of Lang and Ramachandra in Lean 4, extracted from diaz-modulus-lean as a self-contained submission and registered with Palomar as PALOMAR-2026-11-22-000020.
@@ -66,6 +66,21 @@ permalink: /projects/
 - [best-of-lean4](https://github.com/carlok/best-of-lean4) — curated list of awesome Lean 4 projects.
 - [modular-zeta3-acceleration](https://github.com/carlok/modular-zeta3-acceleration) — SageMath pipeline for Apéry-type zeta(3) acceleration.
 
+## Infrastructure, security, and operational tools
+
+- [matrix-podman-stack](https://github.com/carlok/matrix-podman-stack) — private Matrix homeserver on rootless Podman: Synapse and Postgres, Element Web, an optional Telegram bridge, optional Prometheus/Grafana, NATS and Valkey as a bot bus, all bind-mounted under one `DATA_DIR` and publishing on `127.0.0.1` only, with the bot accounts driven by a `bots.yaml` file.
+- [fleetlens](https://github.com/carlok/fleetlens) — agentless, read-only health reports for a small Debian/Ubuntu VM fleet: Ansible over SSH, Python reports, optional email.
+- [forgepulse](https://github.com/carlok/forgepulse) — self-hosted GitHub traffic-history analytics: Rust, Svelte, SQLite, and Podman.
+- [pacenotch](https://github.com/carlok/pacenotch) — Claude usage limits in the terminal, a tray icon and a window: a vertical notch on each bar marks where an even pace would leave you, so the fill says ahead-of-pace or room-to-spare at a glance.
+- [ots-explain](https://github.com/carlok/ots-explain) — check, understand and create OpenTimestamps proofs: every hop from a file to a Bitcoin block, as one static page and one stdlib-only Python script, two independent implementations of one written spec that must print byte-identical reports.
+- [hermes-podman](https://github.com/carlok/hermes-podman) — headless Hermes Agent gateway on rootless Podman: image pinned by tag and digest, Makefile and scripts for setup, backup, restore, upgrade and uninstall, reboot survival, CI-exercised on Ubuntu 26.04.
+- [portcullis](https://github.com/carlok/portcullis) — two-phase hardened Ubuntu 26.04 VM provisioner for Hetzner Cloud: ~30-second lockdown first, then a full CIS-style hardening pass, verified by 58 checks.
+- [python-hosts-checker](https://github.com/carlok/python-hosts-checker) — AWS Lambda endpoint and certificate monitor with Telegram alerts.
+- [sa-client-docker](https://github.com/carlok/sa-client-docker) — SQL Anywhere client container setup with a Python connectivity test.
+- [dash](https://github.com/carlok/dash) — serverless DMARC aggregate-report parser for Gmail: extracts, parses, enriches failing sources, emails a summary.
+- [cold-path-server-podman](https://github.com/carlok/cold-path-server-podman) — run the Cold Path game server (jalhund/cold-path-server) in a Podman container.
+- [Ubuntu-Hardening](https://github.com/carlok/Ubuntu-Hardening) — forked Ubuntu 24.04 CIS hardening script reference.
+
 ## Visual and interactive systems
 
 - [deck-lovers](https://github.com/carlok/deck-lovers) — Markdown-to-HTML deck with live audience likes and projector sync.
@@ -91,21 +106,6 @@ permalink: /projects/
 - [llm-source-security-review](https://github.com/carlok/llm-source-security-review) — Codex skill and playbook for defensive source-code security reviews.
 - [slop-audit](https://github.com/carlok/slop-audit) — local multi-tool harness for AI-slop and formulaic prose: writing linters, descriptive stats and separate local AI-authorship signals, with no hosted detectors.
 - [they-live-agent](https://github.com/carlok/they-live-agent) — local AR-style field-agent scanner experiment inspired by visual overlays.
-
-## Infrastructure, security, and operational tools
-
-- [fleetlens](https://github.com/carlok/fleetlens) — agentless, read-only health reports for a small Debian/Ubuntu VM fleet: Ansible over SSH, Python reports, optional email.
-- [matrix-podman-stack](https://github.com/carlok/matrix-podman-stack) — private Matrix homeserver on rootless Podman: Synapse and Postgres, Element Web, an optional Telegram bridge, optional Prometheus/Grafana, NATS and Valkey as a bot bus, all bind-mounted under one `DATA_DIR` and publishing on `127.0.0.1` only, with the bot accounts driven by a `bots.yaml` file.
-- [forgepulse](https://github.com/carlok/forgepulse) — self-hosted GitHub traffic-history analytics: Rust, Svelte, SQLite, and Podman.
-- [pacenotch](https://github.com/carlok/pacenotch) — Claude usage limits in the terminal, a tray icon and a window: a vertical notch on each bar marks where an even pace would leave you, so the fill says ahead-of-pace or room-to-spare at a glance.
-- [ots-explain](https://github.com/carlok/ots-explain) — check, understand and create OpenTimestamps proofs: every hop from a file to a Bitcoin block, as one static page and one stdlib-only Python script, two independent implementations of one written spec that must print byte-identical reports.
-- [hermes-podman](https://github.com/carlok/hermes-podman) — headless Hermes Agent gateway on rootless Podman: image pinned by tag and digest, Makefile and scripts for setup, backup, restore, upgrade and uninstall, reboot survival, CI-exercised on Ubuntu 26.04.
-- [portcullis](https://github.com/carlok/portcullis) — two-phase hardened Ubuntu 26.04 VM provisioner for Hetzner Cloud: ~30-second lockdown first, then a full CIS-style hardening pass, verified by 58 checks.
-- [python-hosts-checker](https://github.com/carlok/python-hosts-checker) — AWS Lambda endpoint and certificate monitor with Telegram alerts.
-- [sa-client-docker](https://github.com/carlok/sa-client-docker) — SQL Anywhere client container setup with a Python connectivity test.
-- [dash](https://github.com/carlok/dash) — serverless DMARC aggregate-report parser for Gmail: extracts, parses, enriches failing sources, emails a summary.
-- [cold-path-server-podman](https://github.com/carlok/cold-path-server-podman) — run the Cold Path game server (jalhund/cold-path-server) in a Podman container.
-- [Ubuntu-Hardening](https://github.com/carlok/Ubuntu-Hardening) — forked Ubuntu 24.04 CIS hardening script reference.
 
 ## Writing, philosophy, and structured notes
 
