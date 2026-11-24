@@ -31,6 +31,12 @@ permalink: /projects/
 
 ## Math, computation, and formal experiments
 
+- [ragusa](https://github.com/carlok/ragusa) — conjecturing engine that reports its own floor: over numeric and boolean tables it enumerates bounds and implications, then prints each filter's partition (representative, alias, discarded), per-object attribution, a chance baseline and a pinning block, with a Rust engine and a calibration census of what TxGraffiti's and AutoGraphForge's own filters discard.
+- [strong-six-exponentials-palomar](https://github.com/carlok/strong-six-exponentials-palomar) — Roy's strong six exponentials theorem and his rank bound for matrices of logarithms in Lean 4, a module-system extract of diaz-modulus-lean prepared for the Palomar registry.
+- [five-exponentials-palomar](https://github.com/carlok/five-exponentials-palomar) — the five exponentials theorem of Waldschmidt 1988 in Lean 4, a module-system extract of diaz-modulus-lean prepared for the Palomar registry.
+- [four-exponentials-palomar](https://github.com/carlok/four-exponentials-palomar) — the four exponentials theorem in transcendence degree one and Schneider's eighth problem in Lean 4, a module-system extract of diaz-modulus-lean prepared for the Palomar registry.
+- [baker-linear-forms-palomar](https://github.com/carlok/baker-linear-forms-palomar) — Baker's theorem on linear forms in logarithms and the Schneider–Lang criterion for ℂ^{d₀} × (ℂ^×)^{d₁} with d₀ ≤ 1, in Lean 4, a module-system extract of diaz-modulus-lean prepared for the Palomar registry.
+- [transcendence-criterion-palomar](https://github.com/carlok/transcendence-criterion-palomar) — Gel'fond's transcendence criterion in Waldschmidt's 1971 form, in Lean 4, a module-system extract of diaz-modulus-lean prepared for the Palomar registry.
 - [LeanFrontier](https://github.com/carlok/LeanFrontier) — open Lean 4 library of machine-generated, kernel-verified mathematics on Mathlib.
 - [duet](https://github.com/carlok/duet) — open-ended search over small theories in two binary operations for synergy: laws a theory implies but no single law of it does, every claim checked by finite-model search and theorem provers, with a funnel that separates rediscovery from novelty.
 - [aristowrap](https://github.com/carlok/aristowrap) — Docker-first CLI around Harmonic Aristotle, Lean 4, and Mathlib.
