@@ -63,7 +63,6 @@ permalink: /projects/
 - [moebius-transcendental-lean](https://github.com/carlok/moebius-transcendental-lean) — Lean 4 formalization of the conjugation degree on the transcendental locus (companion to p19), archived with a Zenodo DOI.
 - [unused-assumptions](https://github.com/carlok/unused-assumptions) — Mathlib theorems whose stated typeclass setting is stronger than their proof needs; machine-found one-binder weakenings, each re-verified by the compiler at a pinned Mathlib revision.
 - [lean-corpus-density](https://github.com/carlok/lean-corpus-density) — dependency density in Lean 4 corpora, human and machine-generated, with evidence that machine mathematics accumulates. Reproducible from file headers.
-- [best-of-lean4](https://github.com/carlok/best-of-lean4) — curated list of awesome Lean 4 projects.
 - [modular-zeta3-acceleration](https://github.com/carlok/modular-zeta3-acceleration) — SageMath pipeline for Apéry-type zeta(3) acceleration.
 
 ## Agents, automation, and review workflows
