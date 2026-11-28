@@ -29,9 +29,26 @@ permalink: /projects/
   <a class="tab" href="/cv/">cv.sh</a>
 </div>
 
+## Infrastructure, security, and operational tools
+
+- [pacenotch](https://github.com/carlok/pacenotch) — Claude usage limits in the terminal, a tray icon and a window: a vertical notch on each bar marks where an even pace would leave you, so the fill says ahead-of-pace or room-to-spare at a glance.
+- [matrix-podman-stack](https://github.com/carlok/matrix-podman-stack) — private Matrix homeserver on rootless Podman: Synapse and Postgres, Element Web, an optional Telegram bridge, optional Prometheus/Grafana, NATS and Valkey as a bot bus, all bind-mounted under one `DATA_DIR` and publishing on `127.0.0.1` only, with the bot accounts driven by a `bots.yaml` file.
+- [fleetlens](https://github.com/carlok/fleetlens) — agentless, read-only health reports for a small Debian/Ubuntu VM fleet: Ansible over SSH, Python reports, optional email.
+- [forgepulse](https://github.com/carlok/forgepulse) — self-hosted GitHub traffic-history analytics: Rust, Svelte, SQLite, and Podman.
+- [ots-explain](https://github.com/carlok/ots-explain) — check, understand and create OpenTimestamps proofs: every hop from a file to a Bitcoin block, as one static page and one stdlib-only Python script, two independent implementations of one written spec that must print byte-identical reports.
+- [hermes-podman](https://github.com/carlok/hermes-podman) — headless Hermes Agent gateway on rootless Podman: image pinned by tag and digest, Makefile and scripts for setup, backup, restore, upgrade and uninstall, reboot survival, CI-exercised on Ubuntu 26.04.
+- [portcullis](https://github.com/carlok/portcullis) — two-phase hardened Ubuntu 26.04 VM provisioner for Hetzner Cloud: ~30-second lockdown first, then a full CIS-style hardening pass, verified by 58 checks.
+- [python-hosts-checker](https://github.com/carlok/python-hosts-checker) — AWS Lambda endpoint and certificate monitor with Telegram alerts.
+- [sa-client-docker](https://github.com/carlok/sa-client-docker) — SQL Anywhere client container setup with a Python connectivity test.
+- [dash](https://github.com/carlok/dash) — serverless DMARC aggregate-report parser for Gmail: extracts, parses, enriches failing sources, emails a summary.
+- [cold-path-server-podman](https://github.com/carlok/cold-path-server-podman) — run the Cold Path game server (jalhund/cold-path-server) in a Podman container.
+
 ## Math, computation, and formal experiments
 
+- [diaz-modulus-lean](https://github.com/carlok/diaz-modulus-lean) — Lean 4 formalization of a negative result on Diaz's modulus conjecture: a candidate's conjugate is a rational function of it, so no algebraic-hull matrix statement can separate it from an ordinary complex number.
+- [euclean](https://github.com/carlok/euclean) — can a machine recover mathematical structure from an anonymized formal theory and a proof checker alone?
 - [duet](https://github.com/carlok/duet) — open-ended search over small theories in two binary operations for synergy: laws a theory implies but no single law of it does, every claim checked by finite-model search and theorem provers, with a funnel that separates rediscovery from novelty.
+- [prove2me-logs](https://github.com/carlok/prove2me-logs) — working log of Prove2Me formalization activity: per-mission entries with theorem uuids, Lean environments, and what remains open; a record of the work, not an archive of the proofs.
 - [cdclkit](https://github.com/carlok/cdclkit) — readable, self-checking CDCL SAT solver, preprocessor, and encoding library: every answer comes with a certificate (models re-checked, UNSAT backed by a DRAT proof an independent checker replays).
 - [dratify](https://github.com/carlok/dratify) — in-process DRAT/DRUP unsatisfiability proof checker for Python and Rust: zero dependencies, with an optional Rust accelerator.
 - [ragusa](https://github.com/carlok/ragusa) — conjecturing engine that reports its own floor: over numeric and boolean tables it enumerates bounds and implications, then prints each filter's partition (representative, alias, discarded), per-object attribution, a chance baseline and a pinning block, with a Rust engine and a calibration census of what TxGraffiti's and AutoGraphForge's own filters discard.
@@ -42,11 +59,8 @@ permalink: /projects/
 - [five-exponentials-palomar](https://github.com/carlok/five-exponentials-palomar) — the five exponentials theorem of Waldschmidt 1988 in Lean 4, a module-system extract of diaz-modulus-lean prepared for the Palomar registry.
 - [baker-linear-forms-palomar](https://github.com/carlok/baker-linear-forms-palomar) — Baker's theorem on linear forms in logarithms and the Schneider–Lang criterion for ℂ^{d₀} × (ℂ^×)^{d₁} with d₀ ≤ 1, in Lean 4, a module-system extract of diaz-modulus-lean prepared for the Palomar registry.
 - [aristowrap](https://github.com/carlok/aristowrap) — Docker-first CLI around Harmonic Aristotle, Lean 4, and Mathlib.
-- [diaz-modulus-lean](https://github.com/carlok/diaz-modulus-lean) — Lean 4 formalization of a negative result on Diaz's modulus conjecture: a candidate's conjugate is a rational function of it, so no algebraic-hull matrix statement can separate it from an ordinary complex number.
 - [six-exponentials-lean](https://github.com/carlok/six-exponentials-lean) — the six exponentials theorem of Lang and Ramachandra in Lean 4, extracted from diaz-modulus-lean as a self-contained submission and registered with Palomar as PALOMAR-2026-11-22-000020.
-- [prove2me-logs](https://github.com/carlok/prove2me-logs) — working log of Prove2Me formalization activity: per-mission entries with theorem uuids, Lean environments, and what remains open; a record of the work, not an archive of the proofs.
 - [packed-table-footprint](https://github.com/carlok/packed-table-footprint) — axiom-footprint measurements for a packed finite-operation-table encoding of ETP countermodels: a table written as one `Nat` literal closes over no axioms through the Stage 2 judge, where `finOpTable` closes over three.
-- [euclean](https://github.com/carlok/euclean) — can a machine recover mathematical structure from an anonymized formal theory and a proof checker alone?
 - [blindhex](https://github.com/carlok/blindhex) — blind, pre-registered analysis of GNSS interference seen by aircraft (GPSJAM, 2022–2026): hexagon ids replaced by random opaque ids, the report hashed and frozen before the key is opened, reproducible end to end with Podman.
 - [parsimagma](https://github.com/carlok/parsimagma) — magma signature and coverage engine over the Equational Theories Project law set.
 - [hidden-intersections](https://github.com/carlok/hidden-intersections) — Quilez's hidden intersections worked out as a complex kei: the theory paper, an exhaustive input × mirror classification (7 real classes, 35 cells, 88 leaves, 305 checks), 16 worked examples, storyboards, and a dependency-free explorer of the complex tangency locus.
@@ -67,38 +81,24 @@ permalink: /projects/
 
 ## Agents, automation, and review workflows
 
-- [topshift-trend](https://github.com/carlok/topshift-trend) — Telegram bot that watches new entries in GitHub monthly trending repositories.
 - [roundstorm](https://github.com/carlok/roundstorm) — local-first app where persistent, heterogeneous AI researchers deliberate for a set number of rounds on a hard question; macOS, Linux and Windows.
+- [topshift-trend](https://github.com/carlok/topshift-trend) — Telegram bot that watches new entries in GitHub monthly trending repositories.
 - [alien-hunt](https://github.com/carlok/alien-hunt) — samples the defects a plain LLM review of a repository does not report, adapting The Alien Space of Science to code: candidates from the library's own sources, sinks and invariants, ranked by a model's coherence rating and by embedding distance from what the reviews already said, confirmed only when a reproducer imports the library, calls the function and exits 0 inside a sandbox.
 - [caciarabot](https://github.com/carlok/caciarabot) — Italian-first, self-hosted reactive Telegram group bot.
 - [llm-source-security-review](https://github.com/carlok/llm-source-security-review) — Codex skill and playbook for defensive source-code security reviews.
 - [slop-audit](https://github.com/carlok/slop-audit) — local multi-tool harness for AI-slop and formulaic prose: writing linters, descriptive stats and separate local AI-authorship signals, with no hosted detectors.
 - [they-live-agent](https://github.com/carlok/they-live-agent) — local AR-style field-agent scanner experiment inspired by visual overlays.
 
-## Infrastructure, security, and operational tools
-
-- [matrix-podman-stack](https://github.com/carlok/matrix-podman-stack) — private Matrix homeserver on rootless Podman: Synapse and Postgres, Element Web, an optional Telegram bridge, optional Prometheus/Grafana, NATS and Valkey as a bot bus, all bind-mounted under one `DATA_DIR` and publishing on `127.0.0.1` only, with the bot accounts driven by a `bots.yaml` file.
-- [fleetlens](https://github.com/carlok/fleetlens) — agentless, read-only health reports for a small Debian/Ubuntu VM fleet: Ansible over SSH, Python reports, optional email.
-- [forgepulse](https://github.com/carlok/forgepulse) — self-hosted GitHub traffic-history analytics: Rust, Svelte, SQLite, and Podman.
-- [pacenotch](https://github.com/carlok/pacenotch) — Claude usage limits in the terminal, a tray icon and a window: a vertical notch on each bar marks where an even pace would leave you, so the fill says ahead-of-pace or room-to-spare at a glance.
-- [ots-explain](https://github.com/carlok/ots-explain) — check, understand and create OpenTimestamps proofs: every hop from a file to a Bitcoin block, as one static page and one stdlib-only Python script, two independent implementations of one written spec that must print byte-identical reports.
-- [hermes-podman](https://github.com/carlok/hermes-podman) — headless Hermes Agent gateway on rootless Podman: image pinned by tag and digest, Makefile and scripts for setup, backup, restore, upgrade and uninstall, reboot survival, CI-exercised on Ubuntu 26.04.
-- [portcullis](https://github.com/carlok/portcullis) — two-phase hardened Ubuntu 26.04 VM provisioner for Hetzner Cloud: ~30-second lockdown first, then a full CIS-style hardening pass, verified by 58 checks.
-- [python-hosts-checker](https://github.com/carlok/python-hosts-checker) — AWS Lambda endpoint and certificate monitor with Telegram alerts.
-- [sa-client-docker](https://github.com/carlok/sa-client-docker) — SQL Anywhere client container setup with a Python connectivity test.
-- [dash](https://github.com/carlok/dash) — serverless DMARC aggregate-report parser for Gmail: extracts, parses, enriches failing sources, emails a summary.
-- [cold-path-server-podman](https://github.com/carlok/cold-path-server-podman) — run the Cold Path game server (jalhund/cold-path-server) in a Podman container.
-
 ## Visual and interactive systems
 
-- [deck-lovers](https://github.com/carlok/deck-lovers) — Markdown-to-HTML deck with live audience likes and projector sync.
-- [guess-the-move](https://github.com/carlok/guess-the-move) — chess trainer that reveals what Stockfish, a real player of known rating and Maia would play, and how far your guess is from each; 2,000 Lichess-sourced positions, a local level estimate, retries, daily challenges, no server.
-- [consculpta](https://github.com/carlok/consculpta) — browser-only breeder of 3D sculptures: formulas over simplex noise, mutated as trees, raymarched in WebGL 2, with a genome editor, Shadertoy export and an optional bring-your-own-key AI co-breeder.
 - [sunslide](https://github.com/carlok/sunslide) — 3D arcade puzzle on a tiny planet: Pac-Man-style bubble chasing over a 15-puzzle of sliding meadow islands, three.js + WebGL, day/night, bats, sinkholes and a planet that greens as you clear it, playable in the browser.
 - [red-ink](https://github.com/carlok/red-ink) — *Sublevel Three*, a browser fighting game in one HTML file: a warehouse, six named bouts, a story frame about a door that is not on the floor plan, keyboard/gamepad/touch, live tuning measured against seeded bot win rates, and a headless regression suite that also plays it offline from `file://`.
+- [consculpta](https://github.com/carlok/consculpta) — browser-only breeder of 3D sculptures: formulas over simplex noise, mutated as trees, raymarched in WebGL 2, with a genome editor, Shadertoy export and an optional bring-your-own-key AI co-breeder.
+- [deck-lovers](https://github.com/carlok/deck-lovers) — Markdown-to-HTML deck with live audience likes and projector sync.
+- [guess-the-move](https://github.com/carlok/guess-the-move) — chess trainer that reveals what Stockfish, a real player of known rating and Maia would play, and how far your guess is from each; 2,000 Lichess-sourced positions, a local level estimate, retries, daily challenges, no server.
+- [pickmydegree](https://github.com/carlok/pickmydegree) — helps undecided students choose a university degree through tournament-style pairwise comparisons.
 - [agility-trainer](https://github.com/carlok/agility-trainer) — mobile-first bodyweight agility trainer.
 - [solids-hunter](https://github.com/carlok/solids-hunter) — first-person boolean-rule hunt: Babylon.js game with gamepad support and a shadow-pass watchdog.
-- [pickmydegree](https://github.com/carlok/pickmydegree) — helps undecided students choose a university degree through tournament-style pairwise comparisons.
 - [cross-tetris](https://github.com/carlok/cross-tetris) — shared-queue 4-well cross variant of Tetris: Rust/WASM engine with a rule-based AI, played in the browser.
 - [neon-bumper-cars](https://github.com/carlok/neon-bumper-cars) — multiplayer WebSocket party game for live events.
 - [staffarda](https://github.com/carlok/staffarda) — procedural Blender reconstruction of the ground floor of the Staffarda Abbey guesthouse, rebuilt from three photos: rib vault, four columns, weathered materials, a two-minute walkthrough, and a first-order thrust-line check of the vault.
