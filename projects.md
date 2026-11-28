@@ -98,6 +98,7 @@ permalink: /projects/
 - [red-ink](https://github.com/carlok/red-ink) — *Sublevel Three*, a browser fighting game in one HTML file: a warehouse, six named bouts, a story frame about a door that is not on the floor plan, keyboard/gamepad/touch, live tuning measured against seeded bot win rates, and a headless regression suite that also plays it offline from `file://`.
 - [agility-trainer](https://github.com/carlok/agility-trainer) — mobile-first bodyweight agility trainer.
 - [solids-hunter](https://github.com/carlok/solids-hunter) — first-person boolean-rule hunt: Babylon.js game with gamepad support and a shadow-pass watchdog.
+- [pickmydegree](https://github.com/carlok/pickmydegree) — helps undecided students choose a university degree through tournament-style pairwise comparisons.
 - [cross-tetris](https://github.com/carlok/cross-tetris) — shared-queue 4-well cross variant of Tetris: Rust/WASM engine with a rule-based AI, played in the browser.
 - [neon-bumper-cars](https://github.com/carlok/neon-bumper-cars) — multiplayer WebSocket party game for live events.
 - [staffarda](https://github.com/carlok/staffarda) — procedural Blender reconstruction of the ground floor of the Staffarda Abbey guesthouse, rebuilt from three photos: rib vault, four columns, weathered materials, a two-minute walkthrough, and a first-order thrust-line check of the vault.
